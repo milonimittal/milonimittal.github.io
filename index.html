@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="miloLogo.png"/>
+<title>Miloni Mittal | Home</title>
+
+<style>
+body 
+{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav 
+{
+  overflow: hidden;
+  background-color: white;
+  position:fixed;
+  width:100%;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  padding-top:0.5%;
+  padding-bottom:0.5%;
+  z-index:2;
+}
+
+.topnav img
+{
+  float:left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  width:20%;
+}
+
+.topnav a 
+{
+  float:right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover 
+{
+  color: grey;
+}
+
+.topnav .icon 
+{
+  display: none;
+}
+.columnIntro 
+{
+  float: left;
+  width: 50%;
+  margin-bottom:3%;
+}
+
+
+.rowIntro:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+
+}
+.social 
+{ 
+  width: 100%;
+  top: 50%;
+  text-align: center;
+}
+
+.social .link {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px dashed black;
+  background-clip: content-box;
+  transition: .5s;
+  color: #D7D0BE;
+  font-size: 150%;
+}
+
+.social .link span {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social .link:hover {
+  padding: 20px;
+  color: white;
+  margin-left: -5px;
+  transform: translateX(0px) rotate(360deg);
+}
+
+.social .link.google-plus {
+  background-color: black;
+  color: white;
+}
+
+.social .link.linkedin {
+  background-color: black;
+  color: white;
+}
+
+
+.social .link.medium{
+  background-color: black;
+  color: white;
+}
+.social .link.github{
+  background-color: black;
+  color: white;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.columnCard {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card1 {
+  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2);
+  margin-left: 30%;
+  margin-right: 5%;
+}
+.card2 {
+  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2);
+  margin-left: 5%;
+  margin-right: 30%;
+}
+
+.containerCard {
+  padding: 0 16px;
+}
+
+.containerCard::after, .rowCard::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.footer 
+{
+   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+   padding-top:2.5%;
+   padding-bottom:2.5%;
+   width: 100%;
+   background-color:#F5F5F5;
+   color: black;
+   text-align: center;
+}
+.button {
+  background-color: #29407C;
+  border: none;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /*font-size: 16px;*/
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 30px;
+  /*width: 100%;*/
+}
+
+.button:hover 
+{
+  background-color: #555;
+}
+
+.button_resume 
+{
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.button_resume:hover 
+{
+  background-color: #C8C8C8;
+}
+
+
+.anchor 
+{
+  position: relative;
+}
+.anchor a 
+{
+  position: absolute;
+  left: 0px;
+  top: -8%;
+}
+.columnAwardsText 
+{
+  float: left;
+  width: 75%;
+  padding: 5px;
+}
+.columnAwardsImg 
+{
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+.rowAwards::after 
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.columnBlog {
+  float: left;
+  width: 33.33%;
+  /*padding: 0 10px;*/
+}
+
+/* Remove extra left and right margins, due to padding */
+.rowBlog {margin: 0 0px;}
+
+/* Clear floats after the columns */
+.rowBlog:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cardBlog {
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+  padding: 4%;
+  text-align: center;
+  /*background-color: #f1f1f1;*/
+  margin-right:10%;
+  margin-left:10%;
+}
+@media screen and (max-width: 600px) 
+{
+  .topnav img
+  {
+    float:left;
+    display: block;
+    color: black;
+    text-align: center;
+    width:40%;
+  }
+
+  .topnav a {display: none;}
+  .topnav a.icon 
+  {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {position: fixed;}
+  .topnav.responsive .icon 
+  {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a 
+  {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .columnIntro
+  {
+    width: 100%;
+  }
+  .anchor a 
+  {
+    position: absolute;
+    left: 0px;
+    top: -2%;
+  }
+  .columnCard 
+  {
+    width: 100%;
+    display: block;
+  }
+  .card1 
+  {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .card2 
+  {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .columnAwardsText 
+  {
+    width: 100%;
+  }
+  .columnAwardsImg 
+  {
+    width: 100%;
+    padding-left:25%;
+    padding-right:25%;
+  }
+  .columnBlog {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+</style>
+</head>
+
+
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" style="font-family: 'Poppins', sans-serif; margin-right:2%; color:black; border-bottom: 2px solid #29407C;">Home</a>
+  <!-- <a href="#projects" style="font-family: 'Poppins', sans-serif;">Projects</a> -->
+  <!-- <a href="#internships" style="font-family: 'Poppins', sans-serif;">Internships</a> -->
+  <!-- <a href="#education" style="font-family: 'Poppins', sans-serif;">Education</a> -->
+  <a href="contact.html" style="font-family: 'Poppins', sans-serif;">Contact</a>
+  <!-- <a href="#publications" style="font-family: 'Poppins', sans-serif;">Publications</a> -->
+  <!-- <a href="#awards" style="font-family: 'Poppins', sans-serif;">Awards</a> -->
+  <a href="contact.html" style="font-family: 'Poppins', sans-serif;">Resume</a>
+  <a href="about.html" style="font-family: 'Poppins', sans-serif;">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <h1 style="font-family: 'Abril Fatface', cursive; float:left; font-size:125%; margin-left:2%;">Miloni Mittal</h1>
+</div>
+
+
+
+<br><br><br>
+
+
+
+<div class="rowIntro" style="padding:5%; padding-top:7.5%;padding-bottom:2.5%;">
+    <div class="columnIntro" style=" text-align:center;float:center;">
+        <img src="miloHome.png" width="65%" >
+    </div>
+    <div class="columnIntro" style=" text-align:center; ">
+        <a style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:400%;">Miloni Mittal</a>
+        <br><br>
+        <a style="font-family: 'Poppins', sans-serif; font-size:112.5%; ">I am Miloni Mittal a final year undergrauate at BITS Pilani. I love exploring the different fields in Computer Science. You can contact me at miloni.mittal@gmail.com I am Miloni Mittal a final year undergrauate at BITS Pilani. I love exploring the different fields in Computer Science<br><br></a>
+        <div class="social">
+            <a href="https://plus.google.com/+OndřejBárta-Otaku" class="link github" target="_parent"><span class="fa fa-github"></span></a>
+            <a href="https://twitter.com/PageOnlineXS" class="link linkedin" target="_parent"><span class="fa fa-linkedin"></span></a>
+            <a href="https://plus.google.com/+OndřejBárta-Otaku" class="link medium" target="_parent"><span class="fa fa-medium"></span></a>
+            <a href="https://plus.google.com/+OndřejBárta-Otaku" class="link google-plus" target="_parent"><span class="fa fa-google-plus-square"></span></a>
+        </div>
+    </div>
+</div>
+
+<!-- <p style="font-family: 'Poppins', sans-serif; font-size:150%; text-align: center;"><b>Jump to:</b>
+<button class="button">
+    <a href="about.html" style="font-family: 'Poppins', sans-serif; text-decoration:none; color:white;">About</a>
+</button>
+<button class="button">
+    <a href="index.html" style="font-family: 'Poppins', sans-serif; text-decoration:none; color:white;">Resume</a>
+</button>
+
+<button class="button">
+    <a href="contact.html" style="font-family: 'Poppins', sans-serif; text-decoration:none; color:white;">Contact</a>
+</button>
+<button class="button">
+    <a href="index.html#education" style="font-family: 'Poppins', sans-serif; text-decoration:none; color:white;">Education</a>
+</button>
+<button class="button">
+    <a href="index.html#internships" style="font-family: 'Poppins', sans-serif; text-decoration:none; color:white;">Internships</a>
+</button>
+<button class="button">
+    <a href="index.html#projects" style="font-family: 'Poppins', sans-serif; text-decoration:none; color:white;">Projects</a>
+</button>
+<button class="button">
+    <a href="index.html#publications" style="font-family: 'Poppins', sans-serif; text-decoration:none; color:white;">Publications</a>
+</button>
+<button class="button">
+    <a href="index.html#awards" style="font-family: 'Poppins', sans-serif; text-decoration:none; color:white;">Awards</a>
+</button>
+<button class="button">
+    <a href="index.html#blogs" style="font-family: 'Poppins', sans-serif; text-decoration:none; color:white;">Blogs</a>
+</button>
+</p> -->
+
+<div class="anchor" style="padding-top:2%;">
+    <a name="target" id="education"> </a>
+</div>
+    <p style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:300%; color:white; background-color:black;">
+        Education
+    </p>
+    <p style="font-family: 'Poppins', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
+        <b style="font-family: 'Poppins', sans-serif; font-size: 125%;">Birla Institute of Technology and Science Pilani, Pilani Campus- BITS Pilani (2017-2021)</b><br>
+        B.E. Electrical and Electronics, Minor in Data Science <br>
+        CGPA: 8.83/10
+    </p>
+
+    <p style="font-family: 'Poppins', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
+        <b style="font-family: 'Poppins', sans-serif; font-size: 125%;">Nehru Smaraka Vidyalaya, Bangalore (2015-2017)</b><br>
+        Central Board of Secondary Education - CBSE<br>
+        12th Boards: 96.20%
+    </p>
+
+    <p style="font-family: 'Poppins', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
+        <b style="font-family: 'Poppins', sans-serif; font-size: 125%;">Ryan International School, Bangalore (2003-2015)</b><br>
+        Indian Certificate of Secondary Education - ICSE<br>
+        10th Boards: 96.17%
+    </p>
+
+
+
+
+<div class="anchor" style="padding-top:2%;" >
+    <a name="target" id="internships"> </a>
+</div>
+    <p style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:300%; color:white; background-color:black;">
+        Internships
+    </p>
+    <div class="rowAwards" style="font-family: 'Poppins', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
+        <div class="columnAwardsImg" style="text-align:center;">
+            <img src="bnymLogo.jpg" alt="Forest" style="width:50%;">
+        </div>
+        <div class="columnAwardsText">
+            <p style="font-family: 'Poppins', sans-serif; margin-top:2%; "><b style="font-family: 'Poppins', sans-serif; font-size:125%;"><a href="" target="_blank" style="text-decoration: none;color:#29407C;">
+                Bank of New York Mellon, Pune</a></b> <br>August 2020-Present
+            </p>
+            <p style="font-family: 'Poppins', sans-serif;">
+              •  As a part of the Data Insights Team, building an automated report generator hence reducing redundancy <br>• Building a dashboard that forewarns the team if there are any anomalies in the usual business
+            </p>
+        </div>
+    </div>
+    <div class="rowAwards" style="font-family: 'Poppins', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
+        <div class="columnAwardsImg" style="text-align:center;">
+            <img src="walmartLogo.jpg" alt="Forest" style="width:50%;">
+        </div>
+        <div class="columnAwardsText">
+            <p style="font-family: 'Poppins', sans-serif; margin-top:2%; "><b style="font-family: 'Poppins', sans-serif; font-size:125%;"><a href="" target="_blank" style="text-decoration: none;color:#29407C;">
+                Walmart Global Tech, Bangalore</a></b> <br>May-July 2020<br>
+            </p>
+            <p style="font-family: 'Poppins', sans-serif;">
+              •  As a part of the Personalization Team, migrated on-premise data to Google Cloud Platform <br>• Set up ETL workflow using Scala and Spark, converted Shell scripts of private cluster to run accordingly on GCP 
+            </p>
+        </div>
+    </div>
+    <div class="rowAwards" style="font-family: 'Poppins', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
+        <div class="columnAwardsImg" style="text-align:center;">
+            <img src="iimaLogo.png" alt="Forest" style="width:50%;">
+        </div>
+        <div class="columnAwardsText">
+            <p style="font-family: 'Poppins', sans-serif; margin-top:2%; "><b style="font-family: 'Poppins', sans-serif; font-size:125%;"><a href="" target="_blank" style="text-decoration: none;color:#29407C;">
+                Indian Institute of Management, Ahmedabad </a></b> <br>December 2019-January 2020
+            </p>
+            <p style="font-family: 'Poppins', sans-serif;">
+              •  Obtained topics of discussion (using chi-square testing) and sentiment analysis of YouTube comments<br>• Achieved 72% accuracy using SVM classifier to classify customer restaurant reviews as positive or negative
+            </p>
+        </div>
+    </div>
+    <div class="rowAwards" style="font-family: 'Poppins', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
+        <div class="columnAwardsImg" style="text-align:center;">
+            <img src="ceeriLogo.png" alt="Forest" style="width:50%;">
+        </div>
+        <div class="columnAwardsText">
+            <p style="font-family: 'Poppins', sans-serif; margin-top:2%; "><b style="font-family: 'Poppins', sans-serif; font-size:125%;"><a href="" target="_blank" style="text-decoration: none;color:#29407C;">
+                Central Electronics Engineering Research Institute, Chennai</a></b> <br>May-July 2019
+            </p>
+            <p style="font-family: 'Poppins', sans-serif;">
+              •  Implemented a framework using Python to detect abnormal heart conditions using Photoplethysmography data <br>• Built a GUI for the live collection and display of heartbeat data from a smart watch
+            </p>
+        </div>
+    </div>
+    <!-- <div class="rowCard" >
+        <div class="columnCard">
+            <div class="card1" style="background-color:white;">
+                <img src="bnym.png" alt="Just-Justice" style="width:100%">
+                <div class="containerCard">
+                    <h2 style="font-family: 'Poppins', sans-serif;">Aug 2020 - Present</h2>
+                    <p style="font-family: 'Poppins', sans-serif;">•  As a part of the Data Insights Team, building an automated report generator hence reducing redundancy <br>• Building a dashboard that forewarns the team if there are any anomalies in the usual business
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columnCard">
+            <div class="card2">
+                <img src="walmart.jpg" alt="Mike" style="width:100%">
+                <div class="containerCard">
+                    <h2 style="font-family: 'Poppins', sans-serif;">May 2020 - July 2020</h2>
+                    <p style="font-family: 'Poppins', sans-serif;">•  As a part of the Personalization Team, migrated on-premise data to Google Cloud Platform <br>• Set up ETL workflow using Scala and Spark, converted Shell scripts of private cluster to run accordingly on GCP 
+                    </p>
+                    <p>
+                        <button class="button" style="font-family: 'Poppins', sans-serif;">
+                            Blog
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rowCard">
+        <div class="columnCard">
+            <div class="card1">
+                <img src="iim.jpg" alt="John" style="width:100%">
+                <div class="containerCard">
+                    <h2 style="font-family: 'Poppins', sans-serif;">Dec 2019 - Jan 2020</h2>
+                    <p style="font-family: 'Poppins', sans-serif;">•  Obtained topics of discussion (using chi-square testing) and sentiment analysis of YouTube comments<br>• Achieved 72% accuracy using SVM classifier to classify customer restaurant reviews as positive or negative
+                    </p>
+                    <p>
+                      <button class="button" style="font-family: 'Poppins', sans-serif;">
+                        Blog
+                      </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="columnCard">
+            <div class="card2">
+                <img src="ceeri.png" alt="Just-Justice" style="width:100%">
+                <div class="containerCard">
+                    <h2 style="font-family: 'Poppins', sans-serif;">May 2020 - July 2020</h2>
+                    <p style="font-family: 'Poppins', sans-serif;">•  Implemented a framework using Python to detect abnormal heart conditions using Photoplethysmography data <br>• Built a GUI for the live collection and display of heartbeat data from a smart watch
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+<div class="viewResume" style="text-align:center; padding-top:3%;padding-bottom:3%;background-color:black;">
+    <button class="button_resume">
+        <a href="" style="font-family: 'Poppins', sans-serif; text-decoration: none; color:black;">
+            <b>View Resume</b>
+        </a>
+    </button>
+</div>
+
+
+
+<div class="anchor" style="padding-top:2%;">
+    <a name="target" id="projects"> </a>
+</div>
+    <p style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:300%; color:black;">
+        Projects
+    </p>
+    <div class="rowCard" >
+        <div class="columnCard">
+            <div class="card1" style="background-color:white;">
+                <img src="justjusticeProject.png" alt="Just-Justice" style="width:100%">
+                <div class="containerCard">
+                    <b style="font-family: 'Poppins', sans-serif; font-size:125%;">
+                        Just-Justice
+                    </b>
+                    <p>
+                        <button class="button" style="font-family: 'Poppins', sans-serif;">
+                            Code
+                        </button> 
+                        <button class="button" style="font-family: 'Poppins', sans-serif;""">
+                            Blog
+                        </button>
+                    </p>
+                    <p style="font-family: 'Poppins', sans-serif;">
+                      • Built a search engine for legal documents which retrieves relevant documents from a dataset of ~2000 documents.<br>• Built the UI for the product<br> <b>Tech stack used:</b> Python | HTML | CSS
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columnCard">
+            <div class="card2">
+                <img src="biomedirProject.png" alt="Mike" style="width:100%">
+                <div class="containerCard">
+                    <b style="font-family: 'Poppins', sans-serif; font-size:125%;">
+                        Survey of Delta Models for Biomedical Information Retrieval
+                    </b>
+                    <p>
+                        <button class="button" style="font-family: 'Poppins', sans-serif;">
+                            Paper
+                        </button>
+                    </p>
+                    <p style="font-family: 'Poppins', sans-serif;">
+                        • Surveyed the state-of-art Delta models which use deep learning to build an IR system for biomedical retrieval
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rowCard">
+        <div class="columnCard">
+            <div class="card1">
+                <img src="irProject.gif" alt="John" style="width:100%">
+                <div class="containerCard">
+                    <b style="font-family: 'Poppins', sans-serif; font-size:125%;">
+                        Information Retrieval System Using SMART Notation
+                    </b>
+                    <p>
+                        <button class="button" style="font-family: 'Poppins', sans-serif;">
+                            Code
+                        </button>
+                    </p>
+                    <p style="font-family: 'Poppins', sans-serif;">
+                        • Built an IR system for free text queries using SMART (lnc.ltc) notation on a vector space-based model<br><b>Tech stack used:</b> Python
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="columnCard">
+            <div class="card2">
+                <img src="youtubeProject.jpg" alt="Just-Justice" style="width:100%">
+                <div class="containerCard">
+                    <b style="font-family: 'Poppins', sans-serif; font-size:125%;">
+                        What's That YouTube Channel About?
+                    </b>
+                    <p>
+                        <button class="button" style="font-family: 'Poppins', sans-serif;">
+                            Code
+                        </button> 
+                        <button class="button" style="font-family: 'Poppins', sans-serif;">
+                            Blog
+                        </button>
+                    </p>
+                    <p style="font-family: 'Poppins', sans-serif;">
+                      • Obtained topics of discussion in comments section of YouTube videos using chi-square testing <br>• Obtained sentiment analysis of the comments to know the general opinion of viewers<br><b>Tech stack used:</b> Python
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="anchor" style="padding-top:2%;">
+    <a name="target" id="publications"> </a>
+</div>
+    <p style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:300%; color:white;background-color: black; ">
+        Publications
+    </p>
+    <div class="rowAwards" style="font-family: 'Poppins', sans-serif; margin-left:7.5%;margin-right:7.5%;">
+        <div class="columnAwardsText">
+            <p style="font-family: 'Poppins', sans-serif;">
+                <b style="font-family: 'Poppins', sans-serif; font-size:125%;">
+                Real Time Foreground Segmentation in Videos with Dynamic Background<br><a href="" target="_blank" style="text-decoration: none;color:#29407C">INDICON 2020 (IEEE Conference)</a></b>
+                <br>
+                <b>Project Description:</b>
+                <br>
+                • Proposed a new method to identify the foreground in videos with static/dynamic background in real time<br>• Used exponential smoothing and tuning parameters <br>• Achieved an average F-value of 82% and a rate of 30 frames per second<br>
+            </p>
+        </div>
+
+        <div class="columnAwardsImg">
+            <img src="indiconLogo.png" alt="Forest" style="width:100%">
+        </div>
+    </div>
+
+<div class="anchor" style="padding-top:2%;">
+    <a name="target" id="awards"> </a>
+</div>
+<p style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:300%;background-color:black;color:white;">
+    Awards
+</p>
+<div class="rowAwards" style="font-family: 'Poppins', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
+    <div class="columnAwardsImg">
+        <img src="ghciLogo.png" alt="Forest" style="width:100%">
+    </div>
+    <div class="columnAwardsText">
+        <p style="font-family: 'Poppins', sans-serif;">
+            <b style="font-family: 'Poppins', sans-serif; font-size:125%;">
+                Grace Hopper Celebration India Student Scholar<br><a href="" target="_blank" style="text-decoration: none;color:#29407C">Anita B.org</a>
+            </b>
+            <br>
+                <b>July 2020</b>
+            <br>
+                • Awarded with a free ticket to the Grace Hopper Celebration India Conference, Asia's largest gathering of women technologists
+        </p>
+    </div>
+</div>
+
+<div class="rowAwards" style="font-family: 'Poppins', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
+    <div class="columnAwardsImg" style="text-align:center;">
+        <img src="netappLogo.png" alt="Forest" style="width:50%;">
+    </div>
+    <div class="columnAwardsText">
+        <p style="font-family: 'Poppins', sans-serif;">
+            <b style="font-family: 'Poppins', sans-serif; font-size:125%;">
+                NetApp Women INnovathon Second Runner Up<br><a href="" target="_blank" style="text-decoration: none; color: #29407C">NetApp, Inc.</a>
+            </b>
+            <br>
+                <b>July 2020</b>
+            <br>
+            • Won prize money for building a legal search engine "Just-Justice"<br>• Selected for a 3 month mentorship program by NetApp professionals
+        </p>
+    </div>
+</div>
+
+<div class="anchor" style="padding-top:2%;">
+    <a name="target" id="blogs"> </a>
+</div>
+<p style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:300%;background-color:black;color:white;">
+    Blogs
+</p>
+<p style="text-align: center;font-family: 'Poppins', sans-serif; font-size:125%;margin-left:6%;margin-right:6%;">
+I love to write about my experiences and projects on my Medium blog.<br><br>  
+</p>
+<div class="rowBlog">
+  <div class="columnBlog">
+    <a href="https://css-tricks.com/snippets/jquery/make-entire-div-clickable/" style="text-decoration:none;">
+    <div class="cardBlog" style="background-image: url('ghciBlog.jpg'); background-color: rgba(0,0,0,0.6);
+    background-blend-mode: darken;background-size: 125%;">
+      <h3 style="color:white;font-family: 'Poppins', sans-serif;">The GHCI Student Scholarship: A Step by Step Guide</h3><h4 style="color:white;font-family: 'Poppins', sans-serif;">Published on: July 27, 2020</h4><br>
+      
+      <button class="button" style="font-family: 'Poppins', sans-serif;">
+                            Read the Blog
+                        </button>
+    </div></a>
+  </div>
+
+  <div class="columnBlog">
+    <a href="https://css-tricks.com/snippets/jquery/make-entire-div-clickable/" style="text-decoration:none;">
+    <div class="cardBlog" style="background-image: url('youtubeBlog.jpg'); background-color: rgba(0,0,0,0.6);
+    background-blend-mode: darken; background-size: 125%;">
+      <h3 style="color:white;font-family: 'Poppins', sans-serif;">What’s That YouTube Channel About?</h3><h4 style="color:white;font-family: 'Poppins', sans-serif;">Published on: July 23, 2020</h4><br>
+      <button class="button" style="font-family: 'Poppins', sans-serif;">
+                            Read the Blog
+                        </button>
+    </div>
+  </a>
+  </div>
+  
+  <div class="columnBlog">
+    <a href="https://css-tricks.com/snippets/jquery/make-entire-div-clickable/" style="text-decoration:none;">
+    <div class="cardBlog" style="background-image: url('walmartBlog.jpg'); background-color: rgba(0,0,0,0.6);
+    background-blend-mode: darken; background-size: 125%;">
+      <h3 style="color:white;font-family: 'Poppins', sans-serif;">My Internship Experience at Walmart Global Tech</h3><h4 style="color:white;font-family: 'Poppins', sans-serif;">Published on: July 15, 2020</h4><br>
+      <button class="button" style="font-family: 'Poppins', sans-serif;">
+                            Read the Blog
+                        </button>
+    </div></a>
+  </div>
+</div>
+<br><br><br>
+<div class="footer">
+    <p style="font-family: 'Poppins', sans-serif;">
+        Thank you for stopping by.
+    </p>
+    <p style="font-family: 'Poppins', sans-serif;">
+        Let's connect!
+        <div class="social">
+        <a href="https://plus.google.com/+OndřejBárta-Otaku" class="link github" target="_parent" style="display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 37.5px;
+  height: 37.5px;
+  border-radius: 50%;
+  border: 2px dashed black;
+  background-clip: content-box;
+  transition: .5s;
+  color: white;font-size: 100%;"><span class="fa fa-github"></span></a>
+        <a href="https://twitter.com/PageOnlineXS" class="link linkedin" target="_parent" style="display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 37.5px;
+  height: 37.5px;
+  border-radius: 50%;
+  border: 2px dashed black;
+  background-clip: content-box;
+  transition: .5s;
+  color: white;font-size: 100%;"><span class="fa fa-linkedin" ></span></a>
+        <a href="https://plus.google.com/+OndřejBárta-Otaku" class="link medium" target="_parent" style="display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 37.5px;
+  height: 37.5px;
+  border-radius: 50%;
+  border: 2px dashed black;
+  background-clip: content-box;
+  transition: .5s;
+  color: white;font-size: 100%;"><span class="fa fa-medium"></span></a>
+        <a href="https://plus.google.com/+OndřejBárta-Otaku" class="link google-plus" target="_parent" style="display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 37.5px;
+  height: 37.5px;
+  border-radius: 50%;
+  border: 2px dashed black;
+  background-clip: content-box;
+  transition: .5s;
+  color: white;font-size: 100%;"><span class="fa fa-google-plus-square"></span></a>
+    </div>
+    </p>
+    <br>
+</div>
+
+
+<script>
+  function myFunction() 
+  {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") 
+    {
+      x.className += " responsive";
+    } 
+    else 
+    {
+      x.className = "topnav";
+    }
+  }
+</script>
+
+</body>
+</html>
