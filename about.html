@@ -193,6 +193,62 @@ html {
 {
   background-color: #555;
 }
+.social 
+{ 
+  width: 100%;
+  top: 50%;
+  text-align: center;
+}
+
+.social .link {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px dashed black;
+  background-clip: content-box;
+  transition: .5s;
+  color: #D7D0BE;
+  font-size: 150%;
+}
+
+.social .link span {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social .link:hover {
+  padding: 20px;
+  color: white;
+  margin-left: -5px;
+  transform: translateX(0px) rotate(360deg);
+}
+
+.social .link.google-plus {
+  background-color: black;
+  color: white;
+}
+
+.social .link.linkedin {
+  background-color: black;
+  color: white;
+}
+
+
+.social .link.medium{
+  background-color: black;
+  color: white;
+}
+.social .link.github{
+  background-color: black;
+  color: white;
+}
 @media screen and (max-width: 600px) {
 	.topnav img
   {
@@ -239,9 +295,10 @@ html {
   .columnAwardsImg 
   {
     width: 100%;
-    padding-left:25%;
-    padding-right:25%;
+    /*padding-left:25%;
+    padding-right:25%;*/
   }
+
 }
 
 
@@ -271,14 +328,25 @@ html {
 
 <div class="rowAwards" style="font-family: 'Poppins', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
     <div class="columnAwardsImg" style="text-align:center;">
-        <img src="miloAbout1.png" style="width:60%;">
+        <img src="miloAbout1.png" style="width:65%;">
+        <p style="font-family: 'Poppins', sans-serif; font-size:112.5%;"><b>On a mission to<br>learn 📚, explore 🧭 and grow 🌱!</b></p><br>
+        <div class="social">
+            <a href="https://github.com/milonimittal" class="link github" target="_blank"><span class="fa fa-github"></span></a>
+            <a href="https://www.linkedin.com/in/miloni-mittal/" class="link linkedin" target="_blank"><span class="fa fa-linkedin"></span></a>
+            <a href="https://medium.com/@milonimittal" class="link medium" target="_blank"><span class="fa fa-medium"></span></a>
+            <a href="mailto:miloni.mittal@gmail.com" class="link google-plus" target="_blank"><span class="fa fa-google-plus-square"></span></a>
+        </div>
     </div>
     <div class="columnAwardsText">
-        <p style="text-align:left;font-family: 'Abril Fatface', cursive; font-size:125%; ">
+        <p style="text-align:left;font-family: 'Abril Fatface', cursive; font-size:150%; ">
             Hello! I am Miloni.
         </p>
         <p style="font-family: 'Poppins', sans-serif;">
-        	I am Miloni Mittal a final year undergrauate at BITS Pilani. I love exploring the different fields in Computer Science. You can contact me at miloni.mittal@gmail.com I am Miloni Mittal a final year undergrauate at BITS Pilani. I love exploring the different fields in Computer ScienceI am Miloni Mittal a final year undergrauate at BITS Pilani. I love exploring the different fields in Computer Science. You can contact me at miloni.mittal@gmail.com I am Miloni Mittal a final year undergrauate at BITS Pilani. I love exploring the different fields in Computer ScienceI am Miloni Mittal a final year undergrauate at BITS Pilani. I love exploring the different fields in Computer Science. You can contact me at miloni.mittal@gmail.com I am Miloni Mittal a final year undergrauate at BITS Pilani. I love exploring the different fields in Computer Science
+        	I am a data person, explorer and dancer.<br><br>
+          Currently, I am a final-year student at BITS Pilani. Throughout my days at college, I have explored numerous things. But one of the most fascinating thing I discovered is the Power of Data. Through hands-on projects and courses based on statistics, natural language processing and neural networks, I have realised that making use of data is what I love. This led me to pursue internships at BNY Mellon, Walmart Global Tech, IIM Ahmedabad and CEERI Chennai, where I made use of different types of data to gain insights, detect anomalies and build products.<br><br>
+          I am intrigued whenever I discover something new and give my 100% to understand it. Hence, I call myself an explorer. The latest example would be User Interface. During the lockdown, I accidently started noticing the apps/websites that I use more carefully than ever before. This sent me spiraling into a vortex of articles and videos about design, typography and colours. This personal website is a result of what I learnt as a result of the curiosity. I have thoroughly enjoyed learning about user interface for the past few weeks.  <br><br>
+          If I am not doing either of these things, you'll find me spending time on Women of BITS and dancing. Scroll to find more!<br><br>
+           
         </p>
     </div>
 </div>
