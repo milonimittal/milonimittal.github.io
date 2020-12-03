@@ -119,10 +119,10 @@
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        border: 2px dashed black;
+        /*border: 2px dashed black;*/
         background-clip: content-box;
-        transition: .5s;
-        color: #D7D0BE;
+        /*transition: .5s;*/
+        /*color: #D7D0BE;*/
         font-size: 150%;
       }
 
@@ -138,21 +138,31 @@
 
       .social .link:hover 
       {
-        padding: 20px;
+        padding: 1px;
         color: white;
-        margin-left: -5px;
-        transform: translateX(0px) rotate(360deg);
+        /*margin-left: -5px;*/
+        /*transform: translateX(0px) rotate(360deg);*/
       }
 
-      .social .link.google-plus 
+      .social .link.envelope
       {
         background-color: black;
         color: white;
       }
+      .social .link.envelope:hover
+      {
+        background-color: #555;
+        color: white;
+      }
 
-      .social .link.linkedin
+      .social .link.linkedin 
       {
         background-color: black;
+        color: white;
+      }
+      .social .link.linkedin:hover
+      {
+        background-color: #555;
         color: white;
       }
 
@@ -161,10 +171,20 @@
         background-color: black;
         color: white;
       }
+      .social .link.medium:hover
+      {
+        background-color: #555;
+        color: white;
+      }
 
       .social .link.github
       {
         background-color: black;
+        color: white;
+      }
+      .social .link.github:hover
+      {
+        background-color: #555;
         color: white;
       }
 
@@ -208,70 +228,7 @@
         background-color: #555;
       }
 
-      .social 
-      { 
-        width: 100%;
-        top: 50%;
-        text-align: center;
-      }
-
-      .social .link 
-      {
-        display: inline-block;
-        vertical-align: middle;
-        position: relative;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        border: 2px dashed black;
-        background-clip: content-box;
-        transition: .5s;
-        color: #D7D0BE;
-        font-size: 150%;
-      }
-
-      .social .link span
-      {
-        display: block;
-        position: absolute;
-        text-align: center;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      .social .link:hover 
-      {
-        padding: 20px;
-        color: white;
-        margin-left: -5px;
-        transform: translateX(0px) rotate(360deg);
-      }
-
-      .social .link.google-plus 
-      {
-        background-color: black;
-        color: white;
-      }
-
-      .social .link.linkedin 
-      {
-        background-color: black;
-        color: white;
-      }
-
-      .social .link.medium
-      {
-        background-color: black;
-        color: white;
-      }
-
-      .social .link.github
-      {
-        background-color: black;
-        color: white;
-      }
-
+      
       @media screen and (max-width: 900px) 
       {
       	.topnav img
@@ -361,7 +318,7 @@
         <p style="font-family: 'Poppins', sans-serif; font-size:112.5%;"><b>On a mission to<br>learn &#128218;, explore &#128204; and grow &#127793;!</b></p><br>
         <div class="social"> 
           <a href="https://www.linkedin.com/in/miloni-mittal/" class="link linkedin" target="_blank"><span class="fa fa-linkedin"></span></a>
-          <a href="mailto:miloni.mittal@gmail.com" class="link google-plus" target="_blank"><span class="fa fa-google-plus-square"></span></a>
+          <a href="mailto:miloni.mittal@gmail.com" class="link envelope" target="_blank"><span class="fa fa-envelope"></span></a>
           <a href="https://github.com/milonimittal" class="link github" target="_blank"><span class="fa fa-github"></span></a>
           <a href="https://medium.com/@milonimittal" class="link medium" target="_blank"><span class="fa fa-medium"></span></a>           
         </div>
@@ -447,40 +404,36 @@ In a nutshell, I thoroughly enjoy it when I get a raw dataset in hand to build s
   width: 37.5px;
   height: 37.5px;
   border-radius: 50%;
-  border: 2px dashed black;
   background-clip: content-box;
-  transition: .5s;
-  color: white;font-size: 100%;"><span class="fa fa-linkedin" ></span></a>
-  <a href="mailto:miloni.mittal@gmail.com" class="link google-plus" target="_blank" style="display: inline-block;
+  /*transition: .5s;*/
+  color: white;font-size: 125%;"><span class="fa fa-linkedin" ></span></a>
+  <a href="mailto:miloni.mittal@gmail.com" class="link envelope" target="_blank" style="display: inline-block;
   vertical-align: middle;
   position: relative;
   width: 37.5px;
   height: 37.5px;
   border-radius: 50%;
-  border: 2px dashed black;
   background-clip: content-box;
-  transition: .5s;
-  color: white;font-size: 100%;"><span class="fa fa-google-plus-square"></span></a>
+  /*transition: .5s;*/
+  color: white;font-size: 125%;"><span class="fa fa-envelope"></span></a>
           <a href="https://github.com/milonimittal" class="link github" target="_blank" style="display: inline-block;
   vertical-align: middle;
   position: relative;
   width: 37.5px;
   height: 37.5px;
   border-radius: 50%;
-  border: 2px dashed black;
   background-clip: content-box;
-  transition: .5s;
-  color: white;font-size: 100%;"><span class="fa fa-github"></span></a>
+  /*transition: .5s;*/
+  color: white;font-size: 125%;"><span class="fa fa-github"></span></a>
         <a href="https://medium.com/@milonimittal" class="link medium" target="_blank" style="display: inline-block;
   vertical-align: middle;
   position: relative;
   width: 37.5px;
   height: 37.5px;
   border-radius: 50%;
-  border: 2px dashed black;
   background-clip: content-box;
-  transition: .5s;
-  color: white;font-size: 100%;"><span class="fa fa-medium"></span></a>
+  /*transition: .5s;*/
+  color: white;font-size: 125%;"><span class="fa fa-medium"></span></a>
         
         </div>
       </p>
