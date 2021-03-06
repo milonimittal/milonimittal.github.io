@@ -190,21 +190,23 @@
 
       .card1 
       {
-        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+        /*box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);*/
         margin-left: 30%;
         margin-right: 5%;
       }
 
       .card2 
       {
-        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+        /*box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);*/
         margin-left: 5%;
         margin-right: 30%;
       }
 
       .containerCard 
       {
-        padding: 0 16px;
+        padding: 5%;
+        background-color: white;
+        border-radius:15px;
       }
 
       .containerCard::after, .rowCard::after 
@@ -236,6 +238,7 @@
         margin: 4px 2px;
         cursor: pointer;
         border-radius: 30px;
+        width: 100px;
       }
 
       .button:hover 
@@ -245,9 +248,9 @@
 
       .button_resume 
       {
-        background-color: white;
+        background-color: #00416d;
         border: none;
-        color: black;
+        color: white;
         padding: 20px;
         text-align: center;
         text-decoration: none;
@@ -260,7 +263,7 @@
 
       .button_resume:hover 
       {
-        background-color: #C8C8C8;
+        background-color: #555;
       }
 
       .anchor 
@@ -320,6 +323,7 @@
         text-align: center;
         margin-right:10%;
         margin-left:10%;
+        border-radius:15px;
       }
 
       @media screen and (max-width: 900px) 
@@ -440,7 +444,7 @@
 
     <div class="rowIntro" style="padding-right:5%;padding-left:5%; padding-top:7.5%; margin-bottom:-10%; height:100%;">
       <div class="columnIntroImg" style=" text-align:center;">
-          <img src="miloHome.png" width="65%" alt="miloni's picture in a restaurant">
+          <img src="images/miloHome.png" width="65%" alt="miloni's picture in a restaurant">
       </div>
       <div class="columnIntroText" style=" text-align:center;padding-top:3%; ">
           <a style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:400%;"><span style="background: linear-gradient(to top, #dbf6e9 50%, transparent 50%);">Miloni Mittal</span></a>
@@ -451,12 +455,12 @@
               <a href="https://www.linkedin.com/in/miloni-mittal/" class="link linkedin" target="_blank"><span class="fa fa-linkedin"></span></a>
               <a href="mailto:miloni.mittal@gmail.com" class="link envelope" target="_blank"><span class="fa fa-envelope"></span></a>
               <a href="https://github.com/milonimittal" class="link github" target="_blank"><span class="fa fa-github"></span></a>
-              <a href="https://medium.com/@milonimittal" class="link medium" target="_blank"><span class="fa fa-medium"></span></a> 
+              <a href="https://milonimittal.medium.com/" class="link medium" target="_blank"><span class="fa fa-medium"></span></a> 
           </div>
       </div>
     </div>
 
-    <div class="anchor" style="padding-top:2.5%;">
+    <!-- <div class="anchor" style="padding-top:2.5%;">
       <a name="target" id="education"> </a>
     </div>
 
@@ -482,25 +486,26 @@
         100% in Computer Science & Mathematics • Awarded as the Best Female All-Rounder among 200 girls
     </p>
     </div>
-    
+     -->
     <div class="anchor" style="padding-top:2.5%;" >
       <a name="target" id="internships"> </a>
     </div>
 
-    <p style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:250%; color:black;margin-right:3%;margin-left:3%;padding-bottom:1.5%;"><span style="background: linear-gradient(to top, #dbf6e9 50%, transparent 50%);">
-        Internships</span>
+    <p style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:300%; color:black;margin-right:3%;margin-left:3%;padding-bottom:1.5%;"><span style="background: linear-gradient(to top, #dbf6e9 50%, transparent 50%);">
+        Experience</span>
     </p>
 
     <div class="rowAwards" style="font-family: 'Poppins', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
       <div class="columnAwardsImg" style="text-align:center;">
-            <img src="bnymLogo.jpg" alt="bnym logo" style="width:50%;">
+            <img src="images/bnymLogo.jpg" alt="bnym logo" style="width:50%;">
       </div>
       <div class="columnAwardsText">
             <p style="font-family: 'Poppins', sans-serif; margin-top:2%; "><b style="font-family: 'Poppins', sans-serif; font-size:125%;"><a href="https://www.bnymellon.com/apac/en.html" target="_blank" style="text-decoration: none;color:#00416d;">
-                Bank of New York Mellon, Pune</a></b> <br><b>Data Insights Intern | Aug 2020 - Present</b>
+                Bank of New York Mellon, Pune</a></b> <br><b>Data Insights Intern | Aug - Dec 2020</b>
             </p>
             <p style="font-family: 'Poppins', sans-serif;">
-              •  Generated benchmarking for the operations data to help the teams detect anomalies based on efficiency in usual business. <br>• Building a Natural Language Processing based system to generate deeper insights from the more descriptive, free text part of the dataset.
+              <!-- •  Generated benchmarking for the operations data to help the teams detect anomalies based on efficiency in usual business. <br>• Building a Natural Language Processing based system to generate deeper insights from the more descriptive, free text part of the dataset. -->
+              I worked with the Data Insights team to provide <b>quantitative and qualitative insights</b> into the <b>operations data</b> which can help in increasing efficiency and identify any repetitive core issues that might be hindering the processes. 
             </p>
       </div>
     </div>
@@ -514,14 +519,15 @@
     margin-right:7.5%;">
     <div class="rowAwards" style="font-family: 'Poppins', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
       <div class="columnAwardsImg" style="text-align:center;">
-        <img src="walmartLogo.jpg" alt="walmart global logo" style="width:50%;">
+        <img src="images/walmartLogo.jpg" alt="walmart global logo" style="width:50%;">
       </div>
       <div class="columnAwardsText">
         <p style="font-family: 'Poppins', sans-serif; margin-top:2%; "><b style="font-family: 'Poppins', sans-serif; font-size:125%;"><a href="https://www.linkedin.com/company/walmartglobaltechindia/" target="_blank" style="text-decoration: none;color:#00416d;">
                 Walmart Global Tech, Bangalore</a></b> <br><b>Summer Intern | May - July 2020</b>
         </p>
         <p style="font-family: 'Poppins', sans-serif;">
-              •  As a part of the Personalization Team, migrated on-premise data to Google Cloud Platform. <br>• Set up ETL workflow using Scala and Spark, converted Shell scripts of private cluster to run accordingly on GCP. 
+              As a part of the Personalization Team, I contributed in <b>migrating on-premise data</b> to Google Cloud Platform. I was involved in setting the <b>ETL workflow</b> using Scala and Spark and converting Shell scripts of private cluster to run accordingly on GCP. 
+
         </p>
       </div>
     </div>
@@ -535,14 +541,14 @@
     margin-right:7.5%;">
     <div class="rowAwards" style="font-family: 'Poppins', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
       <div class="columnAwardsImg" style="text-align:center;">
-        <img src="iimaLogo.png" alt="iima logo" style="width:50%;">
+        <img src="images/iimaLogo.png" alt="iima logo" style="width:50%;">
       </div>
       <div class="columnAwardsText">
         <p style="font-family: 'Poppins', sans-serif; margin-top:2%; "><b style="font-family: 'Poppins', sans-serif; font-size:125%;"><a href="https://www.iima.ac.in/" target="_blank" style="text-decoration: none;color:#00416d;">
                 Indian Institute of Management, Ahmedabad </a></b> <br><b>Winter Intern | Dec 2019 - Jan 2020</b>
         </p>
         <p style="font-family: 'Poppins', sans-serif;">
-              •  Obtained topics of discussion (using chi-square testing) and sentiment analysis of YouTube comments. The dataset was obtained using YouTube APIs.<br>• Achieved 72% accuracy using SVM classifier to classify customer restaurant reviews as positive or negative.
+          The aim of the project was to make use of <b>textual data</b> to obtain useful insights without human intervention. I worked on building a pipeline that gives the user an insight into the YouTube comments section of any YouTuber that the he/she wants to know about. Apart from that I also worked on sentiment analysis of restaurant reviews and readability scores of text. 
         </p>
       </div>
     </div>
@@ -556,56 +562,68 @@
     margin-right:7.5%;">
     <div class="rowAwards" style="font-family: 'Poppins', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
       <div class="columnAwardsImg" style="text-align:center;">
-        <img src="ceeriLogo.png" alt="ceeri logo" style="width:50%;">
+        <img src="images/ceeriLogo.png" alt="ceeri logo" style="width:50%;">
       </div>
       <div class="columnAwardsText">
         <p style="font-family: 'Poppins', sans-serif; margin-top:2%; "><b style="font-family: 'Poppins', sans-serif; font-size:125%;"><a href="https://www.csircmc.res.in/ceeri" target="_blank" style="text-decoration: none;color:#00416d;">
                 Central Electronics Engineering Research Institute, Chennai</a></b> <br><b>Summer Research Intern | May - July 2019</b>
         </p>
         <p style="font-family: 'Poppins', sans-serif;">
-              •  Implemented a framework using Python to detect abnormal heart conditions using Photoplethysmography data. <br>• Built a GUI for the live collection and display of heartbeat data from a smart watch.
+              The aim of the project was to detect abnormal heart conditions like arrhythmia using the data received from <b>wearable technology</b> like smartwatches. In a group of 4, we worked on the backend aspect of the project.
         </p>
       </div>
     </div>
 
 <br>
 
-    <div class="viewResume" style="text-align:center; padding-top:3%;padding-bottom:3%;background-color:black;">
+    <div class="viewResume" style="text-align:center; padding-top:3%;padding-bottom:3%;">
       <button class="button_resume">
-        <a href="https://drive.google.com/file/d/12OW3nIJXCdcKeCEGhQVOR6-24cOM_pOw/view?usp=sharing" style="font-family: 'Poppins', sans-serif; text-decoration: none; color:black;" target="_blank">
-            <b>View Resume</b>
+        <a href="https://drive.google.com/file/d/12OW3nIJXCdcKeCEGhQVOR6-24cOM_pOw/view?usp=sharing" style="font-family: 'Poppins', sans-serif; text-decoration: none; color:white;" target="_blank">
+            View Resume
         </a>
       </button>
     </div>
 
 
-
+    <div class="projectBG" style="background-color: black; padding-bottom: 2%;">
     <div class="anchor" style="padding-top:2.5%;">
       <a name="target" id="projects"> </a>
     </div>
 
-    <p style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:250%; color:black;margin-right:3%;margin-left:3%;padding-bottom:1.5%;"><span style="background: linear-gradient(to top, #dbf6e9 50%, transparent 50%);">
+    <p style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:300%; color:white;margin-right:3%;margin-left:3%;padding-bottom:1.5%;"><span style="background: linear-gradient(to top, #00416d 50%, transparent 50%);">
         Projects</span>
     </p>
 	  <div class="rowCard">
       <div class="columnCard">
         <div class="card1">
-          <img src="fgProject.png" alt="expected results and results obtained" style="width:100%">
-          <div class="containerCard">
-            <b style="font-family: 'Poppins', sans-serif; font-size:125%;">
+          
+          <div class="containerCard" >
+            <img src="images/fgProject.png" alt="expected results and results obtained" style="width:100%; border-radius:15px;">
+            <b style="font-family: 'Poppins', sans-serif; font-size:115%;">
                 Foreground Segmentation in Videos with Dynamic Background
             </b>
+            <p>
+                  <button class="button" style="font-family: 'Poppins', sans-serif;">
+                      <a href="https://ieeexplore.ieee.org/document/9342267" style="text-decoration: none;color:white;" target="_blank">Publication</a>
+                  </button> 
+                  <button class="button" style="font-family: 'Poppins', sans-serif;">
+                      <a href="https://github.com/milonimittal/Foreground-Segmentation-for-Video-Sequences-with-Dynamic-Background" style="text-decoration: none;color:white;" target="_blank">Code</a>
+                  </button> 
+              </p>
+            
             <p style="font-family: 'Poppins', sans-serif;">
-                • Proposed a new method to identify the foreground in videos with static/dynamic background in real time<br>• Used exponential smoothing and tuning parameters, so as to accommodate changes in the background <br>• Achieved an average F-value of 82% and a processing rate of 30 frames per second<br>• Research paper accepted at INDICON 2020 in Communications and Signal Processing Track
-            </p>
+                An approach using exponential smoothing and tuning parameters to segment foreground in videos with dynamic background in real time.
+<!--                 • Proposed a new method to identify the foreground in videos with static/dynamic background in real time<br>• Used exponential smoothing and tuning parameters, so as to accommodate changes in the background <br>• Achieved an average F-value of 82% and a processing rate of 30 frames per second<br>• Research paper accepted at INDICON 2020 in Communications and Signal Processing Track
+ -->            </p>
           </div>
         </div>
       </div>
       <div class="columnCard">
         <div class="card2">
-          <img src="gansProject.png" alt="flowchart of the implementation" style="width:100%">
+          
             <div class="containerCard">
-              <b style="font-family: 'Poppins', sans-serif; font-size:125%;">
+              <img src="images/gansProject.png" alt="flowchart of the implementation" style="width:100%; border-radius:15px;">
+              <b style="font-family: 'Poppins', sans-serif; font-size:115%;">
                   Reconstructing Perceived Faces from Brain Activations
               </b>
               <p>
@@ -614,8 +632,9 @@
                   </button> 
               </p>
               <p style="font-family: 'Poppins', sans-serif;">
-                • Implemented the research paper titled "Reconstructing perceived faces from brain activations
-with deep adversarial neural decoding"<br>• Used PyTorch framework for training a model to predict the picture of faces as perceived by the brain<br>• Used the concept of Generative Adversarial Networks and obtained a Pearson Correlation Coefficient of 0.77
+                Implementation of the research paper titled "Reconstructing perceived faces from brain activations
+with deep adversarial neural decoding" using PyTorch framework.
+ <!-- for training a model to predict the picture of faces as perceived by the brain<br>• Used the concept of Generative Adversarial Networks and obtained a Pearson Correlation Coefficient of 0.77 -->
               </p>
             </div>
         </div>
@@ -624,10 +643,11 @@ with deep adversarial neural decoding"<br>• Used PyTorch framework for trainin
 
     <div class="rowCard" >
       <div class="columnCard">
-        <div class="card1" style="background-color:white;">
-          <img src="justjusticeProject.png" alt="just-justice" style="width:100%">
+        <div class="card1">
+          
           <div class="containerCard">
-            <b style="font-family: 'Poppins', sans-serif; font-size:125%;">
+            <img src="images/justjusticeProject.png" alt="just-justice" style="width:100%; border-radius:15px;">
+            <b style="font-family: 'Poppins', sans-serif; font-size:115%;">
                 Just-Justice
             </b>
             <p>
@@ -639,7 +659,8 @@ with deep adversarial neural decoding"<br>• Used PyTorch framework for trainin
                 </button>
             </p>
             <p style="font-family: 'Poppins', sans-serif;">
-              • Built a search engine for legal documents which retrieves relevant documents from a dataset of ~2000 documents<br>• Built the User Interface for the product<br>• Won third prize at a hackathon organised by NetApp for this product<br> <b>Tech stack used:</b> Python | HTML | CSS
+             A search engine for legal documents which retrieves relevant documents from a dataset of ~2000 documents. I built the User Interface and the backend for the product.
+              <!-- <br>• Won third prize at a hackathon organised by NetApp for this product<br> <b>Tech stack used:</b> Python | HTML | CSS -->
             </p>
           </div>
         </div>
@@ -647,10 +668,11 @@ with deep adversarial neural decoding"<br>• Used PyTorch framework for trainin
 
       <div class="columnCard">
         <div class="card2">
-          <img src="biomedirProject.png" alt="screenshot of the survey" style="width:100%">
+          
           <div class="containerCard">
-            <b style="font-family: 'Poppins', sans-serif; font-size:125%;">
-                Survey of Delta Models for Biomedical Information Retrieval
+            <img src="images/biomedirProject.png" alt="screenshot of the survey" style="width:100%; border-radius:15px;">
+            <b style="font-family: 'Poppins', sans-serif; font-size:115%;">
+                Survey - Delta Models for Biomedical IR
             </b>
             <p>
                 <button class="button" style="font-family: 'Poppins', sans-serif;">
@@ -658,7 +680,7 @@ with deep adversarial neural decoding"<br>• Used PyTorch framework for trainin
                 </button>
             </p>
             <p style="font-family: 'Poppins', sans-serif;">
-                Surveyed the state-of-art Delta models which use deep learning to build an Information Retrieval system for biomedical document retrieval<br>
+                Surveyed the state-of-art Delta models which use deep learning to build an Information Retrieval system for biomedical document retrieval.<br>
             </p>
           </div>
         </div>
@@ -667,10 +689,11 @@ with deep adversarial neural decoding"<br>• Used PyTorch framework for trainin
     <div class="rowCard">
       <div class="columnCard">
         <div class="card1">
-          <img src="irProject.gif" alt="boy searching for a paper" style="width:100%">
+          
           <div class="containerCard">
-            <b style="font-family: 'Poppins', sans-serif; font-size:125%;">
-                Information Retrieval System Using SMART Notation
+            <img src="images/irProject.gif" alt="boy searching for a paper" style="width:100%; border-radius:15px;">
+            <b style="font-family: 'Poppins', sans-serif; font-size:115%;">
+                IR System Using SMART Notation
             </b>
             <p>
                 <button class="button" style="font-family: 'Poppins', sans-serif;">
@@ -678,16 +701,17 @@ with deep adversarial neural decoding"<br>• Used PyTorch framework for trainin
                 </button>
             </p>
             <p style="font-family: 'Poppins', sans-serif;">
-                • Built an IR system for free text queries using SMART (lnc.ltc) notation on a vector space-based model<br>• Dataset used: 1M+ documents retrieved from Wikipedia<br><b>Tech stack used:</b> Python
+                Built an IR system for free text queries using SMART (lnc.ltc) notation on a vector space-based model. Dataset used: 1M+ documents retrieved from Wikipedia.
             </p>
           </div>
         </div>
       </div>
       <div class="columnCard">
         <div class="card2">
-          <img src="youtubeProject.jpg" alt="computer with youtube open" style="width:100%">
+          
             <div class="containerCard">
-              <b style="font-family: 'Poppins', sans-serif; font-size:125%;">
+              <img src="images/youtubeProject.jpg" alt="computer with youtube open" style="width:100%; border-radius:15px;">
+              <b style="font-family: 'Poppins', sans-serif; font-size:115%;">
                   What's That YouTube Channel About?
               </b>
               <p>
@@ -695,31 +719,36 @@ with deep adversarial neural decoding"<br>• Used PyTorch framework for trainin
                       <a href="https://github.com/milonimittal/YouTube-Comments-Analysis" style="text-decoration: none;color:white;" target="_blank">Code</a>
                   </button> 
                   <button class="button" style="font-family: 'Poppins', sans-serif;">
-                      <a href="https://medium.com/@milonimittal/whats-that-youtube-channel-about-973f04c72b4d?source=friends_link&sk=a164abffe7622698c44df8fa7a674461" style="text-decoration: none;color:white;" target="_blank">Blog</a>
+                      <a href="https://milonimittal.medium.com/whats-that-youtube-channel-about-973f04c72b4d" style="text-decoration: none;color:white;" target="_blank">Blog</a>
                   </button>
               </p>
               <p style="font-family: 'Poppins', sans-serif;">
-                • Obtained topics of discussion in comments section of YouTube videos using chi-square testing <br>• Obtained sentiment analysis of the comments to know the general opinion of viewers<br><b>Tech stack used:</b> Python
+                Used chi-square testing to obtain topics of discussion in comments section of YouTube videos. Obtained sentiment analysis of the comments to know the opinion of viewers.
               </p>
             </div>
         </div>
       </div>
     </div>
+  </div>
 
     <div class="anchor" style="padding-top:2.5%;">
       <a name="target" id="publications"> </a>
     </div>
 
-    <p style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:250%; color:black;margin-right:3%;margin-left:3%;padding-bottom:1.5%;"><span style="background: linear-gradient(to top, #dbf6e9 50%, transparent 50%);">
+    <p style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:300%; color:black;margin-right:3%;margin-left:3%;padding-bottom:1.5%;"><span style="background: linear-gradient(to top, #dbf6e9 50%, transparent 50%);">
         Publications</span>
     </p>
 
     <!-- <div class="rowAwards" style="font-family: 'Poppins', sans-serif; margin-left:7.5%;margin-right:7.5%;"> -->
       <!-- <div class="columnAwardsText"> -->
-        <p style="font-family: 'Poppins', sans-serif; margin-left:7.5%;margin-right:7.5%;">
+        <p style="font-family: 'Poppins', sans-serif; margin-left:7.5%;margin-right:7.5%; border-radius:15px; background-color: #fafafa; padding:2.5%;">
             <b style="font-family: 'Poppins', sans-serif; font-size:125%;">
-            Real Time Foreground Segmentation in Videos with Dynamic Background<br></b><a href="https://www.indicon2020.in/" target="_blank" style="text-decoration: none;color:#00416d"><b>INDICON 2020 (IEEE India Council International Conference)</b></a>, Accepted
+            Real Time Foreground Segmentation in Videos with Dynamic Background<br></b><a href="https://www.indicon2020.in/" target="_blank" style="text-decoration: none;color:#00416d"><b>INDICON 2020 (IEEE India Council International Conference)</b></a> <button class="button" style="font-family: 'Poppins', sans-serif;">
+                      <a href="https://ieeexplore.ieee.org/document/9342267" style="text-decoration: none;color:white;" target="_blank">Publication</a>
+                  </button> 
             <br>
+             
+                  <!-- <b>Abstract: </b>Modeling background and segmentation of foreground objects are techniques required for various video surveillance and related applications. We propose an intensity and colour based background modeling technique for pixel level foreground segmentation of video sequences with dynamic background. It models the background using initial few frames called training frames and calculates a threshold using statistical analysis on these frames. As the new frames appear in real time, the value of threshold is updated and the background model adapts to the changing background with each incoming frame. Quantitative results suggest that the proposed method can handle the sequences with highly dynamic background. -->
             <!-- <b>Project Description:</b>
             <br>
             • Proposed a new method to identify the foreground in videos with static/dynamic background in real time<br>• Used exponential smoothing and tuning parameters, so as to accommodate changes in the background <br>• Achieved an average F-value of 82% and a processing rate of 30 frames per second<br> -->
@@ -731,22 +760,55 @@ with deep adversarial neural decoding"<br>• Used PyTorch framework for trainin
         <a name="target" id="awards"> </a>
     </div>
 
-    <p style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:250%; color:black;margin-right:3%;margin-left:3%;padding-bottom:1.5%;"><span style="background: linear-gradient(to top, #dbf6e9 50%, transparent 50%);">
+    <p style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:300%; color:black;margin-right:3%;margin-left:3%;padding-bottom:1.5%;"><span style="background: linear-gradient(to top, #dbf6e9 50%, transparent 50%);">
         Awards</span>
     </p>
 
     <div class="rowAwards" style="font-family: 'Poppins', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
       <div class="columnAwardsImg" style="text-align:center;">
-        <img src="netappLogo.png" alt="netapp logo" style="width:50%;">
+        <img src="images/pbLogo.png" alt="product buds logo" style="width:50%;">
       </div>
       <div class="columnAwardsText">
         <p style="font-family: 'Poppins', sans-serif;">
           <b style="font-family: 'Poppins', sans-serif; font-size:125%;">
-              NetApp Women INnovathon Second Runner Up</b><br><b><a href="https://www.netapp.com/" target="_blank" style="text-decoration: none; color: #00416d">NetApp, Inc.</a> | October 2020</b>
+              Project Jam Protothon Fall 2020 - Among Top 5 Teams</b><br><b><a href="https://productbuds.co/" target="_blank" style="text-decoration: none; color: #00416d">Product Buds</a> | November 2020</b>
         </p>
         <p>
-          • Won prize money for building a legal search engine "Just-Justice"<br>• Selected for a 3 month mentorship program by NetApp professionals
+          • Was in the top 5 teams out of 21 participating teams for a case study of a product to deal with "The New
+Normal." Our product focused on providing a platform for university students to engage in social activities during the lockdown.<br>• Had the opportunity to pitch our idea to 4 International Tech Product Managers.
+    </p>
+    <button class="button" style="font-family: 'Poppins', sans-serif;">
+                      <a href="https://youtu.be/sLAM1pPDupk?t=3083" style="text-decoration: none;color:white;" target="_blank">Pitch</a>
+                  </button> <button class="button" style="font-family: 'Poppins', sans-serif;">
+                      <a href="https://milonimittal.medium.com/helping-students-build-community-a-prototype-case-study-81aca65db760" style="text-decoration: none;color:white;" target="_blank">Case Study</a>
+                  </button> 
+      </div>
+    </div>
+    <hr style=" display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    margin-left:7.5%;
+    margin-right:7.5%;">
+    <div class="rowAwards" style="font-family: 'Poppins', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
+      <div class="columnAwardsImg" style="text-align:center;">
+        <img src="images/netappLogo.png" alt="netapp logo" style="width:50%;">
+      </div>
+      <div class="columnAwardsText">
+        <p style="font-family: 'Poppins', sans-serif;">
+          <b style="font-family: 'Poppins', sans-serif; font-size:125%;">
+              NetApp Women INnovathon - Second Runner Up</b><br><b><a href="https://www.netapp.com/" target="_blank" style="text-decoration: none; color: #00416d">NetApp, Inc.</a> | October 2020</b>
+        </p>
+        <p>
+          • Won prize money for building a legal search engine "Just-Justice."<br>• Selected for a 3 month mentorship program by NetApp professionals.
 		</p>
+    <button class="button" style="font-family: 'Poppins', sans-serif;">
+                      <a href="https://github.com/milonimittal/Legal-Search-Engine" style="text-decoration: none;color:white;" target="_blank">Code</a>
+                  </button> <button class="button" style="font-family: 'Poppins', sans-serif;">
+                      <a href="https://milonimittal.medium.com/a-search-engine-for-legal-documents-ce689567fc34" style="text-decoration: none;color:white;" target="_blank">Blog</a>
+                  </button> 
       </div>
     </div>
     <hr style=" display: block;
@@ -759,15 +821,15 @@ with deep adversarial neural decoding"<br>• Used PyTorch framework for trainin
     margin-right:7.5%;">
     <div class="rowAwards" style="font-family: 'Poppins', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
       <div class="columnAwardsImg">
-        <img src="ghciLogo.png" alt="ghci logo" style="width:100%">
+        <img src="images/ghciLogo.png" alt="ghci logo" style="width:100%">
       </div>
       <div class="columnAwardsText">
 		<p style="font-family: 'Poppins', sans-serif;">
           <b style="font-family: 'Poppins', sans-serif; font-size:125%;">
-              Grace Hopper Celebration India Student Scholar</b><br><b><a href="https://www.netapp.com/" target="_blank" style="text-decoration: none; color: #00416d">Anita B.org</a> | July 2020</b>
+              Grace Hopper Celebration India - Student Scholar</b><br><b><a href="https://www.netapp.com/" target="_blank" style="text-decoration: none; color: #00416d">Anita B.org</a> | July 2020</b>
 		</p>
 		<p>
-          • Awarded with a free pass to the Grace Hopper Celebration India Conference, Asia's largest gathering of women technologists
+          • Awarded with a free pass to the Grace Hopper Celebration India Conference, Asia's largest gathering of women technologists.
         </p>
       </div>
     </div>
@@ -776,19 +838,30 @@ with deep adversarial neural decoding"<br>• Used PyTorch framework for trainin
         <a name="target" id="blogs"> </a>
     </div>
 
-    <p style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:250%; color:black;margin-right:3%;margin-left:3%;padding-bottom:1.5%;"><span style="background: linear-gradient(to top, #dbf6e9 50%, transparent 50%);">
+    <p style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:300%; color:black;margin-right:3%;margin-left:3%;padding-bottom:1.5%;"><span style="background: linear-gradient(to top, #dbf6e9 50%, transparent 50%);">
         Blogs</span>
     </p>
 
     <p style="text-align: center;font-family: 'Poppins', sans-serif; font-size:125%;margin-left:6%;margin-right:6%;">
-    I love to write about my experiences and projects on my <a href="https://medium.com/@milonimittal" style="font-family: 'Poppins', sans-serif;text-decoration: none;color:#00416d;" target="_blank"><b>Medium</b></a> blog.<br><br>  
+    I love to write about my experiences and projects on my <a href="https://milonimittal.medium.com/" style="font-family: 'Poppins', sans-serif;text-decoration: none;color:#00416d;" target="_blank"><b>Medium</b></a> blog.<br><br>  
     </p>
     <div class="rowBlog">
-	<div class="columnBlog">
+      <div class="columnBlog">
+        <a href="https://milonimittal.medium.com/a-search-engine-for-legal-documents-ce689567fc34" style="text-decoration:none;" target="_blank">
+          <div class="cardBlog" style="background-image: url('images/legalIRBlog.png'); background-repeat: no-repeat; background-size: cover; ">
+            <h3 style="color:white;font-family: 'Poppins', sans-serif;">A Search Engine for Legal Documents</h3><h4 style="color:white;font-family: 'Poppins', sans-serif;">Published on: Dec 7, 2020</h4><br>
+            <button class="button" style="font-family: 'Poppins', sans-serif; width:125px;">
+                            Read the Blog
+            </button>
+          </div>
+        </a>
+      </div>
+
+    	<div class="columnBlog">
         <a href="https://milonimittal.medium.com/helping-students-build-community-a-prototype-case-study-81aca65db760" style="text-decoration:none;" target="_blank">
-          <div class="cardBlog" style="background-image: url('pjBlog.png'); background-repeat: no-repeat; background-size: cover; ">
+          <div class="cardBlog" style="background-image: url('images/pjBlog.png'); background-repeat: no-repeat; background-size: cover; ">
             <h3 style="color:white;font-family: 'Poppins', sans-serif;">Helping Students Build Community- A Case Study</h3><h4 style="color:white;font-family: 'Poppins', sans-serif;">Published on: Nov 26, 2020</h4><br>
-            <button class="button" style="font-family: 'Poppins', sans-serif;">
+            <button class="button" style="font-family: 'Poppins', sans-serif; width:125px;">
                             Read the Blog
             </button>
           </div>
@@ -796,35 +869,37 @@ with deep adversarial neural decoding"<br>• Used PyTorch framework for trainin
       </div>
 	  
       <div class="columnBlog">
-        <a href="https://medium.com/@milonimittal/discovering-the-secret-to-perfect-time-management-a1a24c5bd1b7" style="text-decoration:none;" target="_blank">
-          <div class="cardBlog" style="background-image: url('timeBlog.png'); background-repeat: no-repeat; background-size: cover; ">
+        <a href="https://milonimittal.medium.com/discovering-the-secret-to-perfect-time-management-a1a24c5bd1b7" style="text-decoration:none;" target="_blank">
+          <div class="cardBlog" style="background-image: url('images/timeBlog.png'); background-repeat: no-repeat; background-size: cover; ">
             <h3 style="color:white;font-family: 'Poppins', sans-serif;">Discovering the Secret to Managing Time Perfectly</h3><h4 style="color:white;font-family: 'Poppins', sans-serif;">Published on: Oct 19, 2020</h4><br>
-            <button class="button" style="font-family: 'Poppins', sans-serif;">
+            <button class="button" style="font-family: 'Poppins', sans-serif; width:125px;">
                             Read the Blog
             </button>
           </div>
         </a>
       </div>
 
+      
+
+        
+    </div>
+    <div class="rowBlog">
       <div class="columnBlog">
-        <a href="https://medium.com/@milonimittal/neural-networks-and-humans-a-comparison-c656a1280816?source=friends_link&sk=42c0cb978fe0d52f19f91ace4844be88" style="text-decoration:none;" target="_blank">
-          <div class="cardBlog" style="background-image: url('neuralBlog.png'); background-repeat: no-repeat; background-size: cover;">
+        <a href="https://milonimittal.medium.com/neural-networks-and-humans-a-comparison-c656a1280816" style="text-decoration:none;" target="_blank">
+          <div class="cardBlog" style="background-image: url('images/neuralBlog.png'); background-repeat: no-repeat; background-size: cover;">
             <h3 style="color:white;font-family: 'Poppins', sans-serif;">Neural Networks and Humans- Exploring Similarities</h3><h4 style="color:white;font-family: 'Poppins', sans-serif;">Published on: Oct 12, 2020</h4><br>
-            <button class="button" style="font-family: 'Poppins', sans-serif;">
+            <button class="button" style="font-family: 'Poppins', sans-serif; width:125px;">
               Read the Blog
             </button>
           </div>
         </a>
       </div>
 
-        
-    </div>
-    <div class="rowBlog">
 	  <div class="columnBlog">
-        <a href="https://medium.com/@milonimittal/the-ghci-student-scholarship-a-step-by-step-guide-f172ab74008f?source=friends_link&sk=0e23b08ec444c115d95b650bf534497a" style="text-decoration:none;" target="_blank">
-          <div class="cardBlog" style="background-image: url('ghciBlog.png'); background-repeat: no-repeat; background-size: cover;">
+        <a href="https://milonimittal.medium.com/the-ghci-student-scholarship-a-step-by-step-guide-f172ab74008f?sk=0e23b08ec444c115d95b650bf534497a" style="text-decoration:none;" target="_blank">
+          <div class="cardBlog" style="background-image: url('images/ghciBlog.png'); background-repeat: no-repeat; background-size: cover;">
             <h3 style="color:white;font-family: 'Poppins', sans-serif;">The GHCI Student Scholarship: A Step by Step Guide</h3><h4 style="color:white;font-family: 'Poppins', sans-serif;">Published on: July 27, 2020</h4><br>
-            <button class="button" style="font-family: 'Poppins', sans-serif;">
+            <button class="button" style="font-family: 'Poppins', sans-serif; width:125px;">
               Read the Blog     
             </button>
           </div>
@@ -832,20 +907,10 @@ with deep adversarial neural decoding"<br>• Used PyTorch framework for trainin
       </div>
 	  
       <div class="columnBlog">
-        <a href="https://medium.com/@milonimittal/whats-that-youtube-channel-about-973f04c72b4d?source=friends_link&sk=a164abffe7622698c44df8fa7a674461" style="text-decoration:none;" target="_blank">
-          <div class="cardBlog" style="background-image: url('youtubeBlog.png'); background-repeat: no-repeat; background-size: cover;">
+        <a href="https://milonimittal.medium.com/whats-that-youtube-channel-about-973f04c72b4d?sk=a164abffe7622698c44df8fa7a674461" style="text-decoration:none;" target="_blank">
+          <div class="cardBlog" style="background-image: url('images/youtubeBlog.png'); background-repeat: no-repeat; background-size: cover;">
             <h3 style="color:white;font-family: 'Poppins', sans-serif;">What’s That YouTube Channel About? Find Out Using NLP</h3><h4 style="color:white;font-family: 'Poppins', sans-serif;">Published on: July 23, 2020</h4><br>
-            <button class="button" style="font-family: 'Poppins', sans-serif;">
-              Read the Blog
-            </button>
-          </div>
-        </a>
-      </div>
-      <div class="columnBlog">
-        <a href="https://medium.com/@milonimittal/my-internship-experience-at-walmart-labs-60d252289cd1?source=friends_link&sk=aa7251fde3435406f090863d2bbcdad0" style="text-decoration:none;" target="_blank">
-          <div class="cardBlog" style="background-image: url('walmartBlog.png'); background-repeat: no-repeat; background-size: cover;">
-            <h3 style="color:white;font-family: 'Poppins', sans-serif;">My Internship Experience at Walmart Global Tech</h3><h4 style="color:white;font-family: 'Poppins', sans-serif;">Published on: July 15, 2020</h4><br>
-            <button class="button" style="font-family: 'Poppins', sans-serif;">
+            <button class="button" style="font-family: 'Poppins', sans-serif; width:125px;">
               Read the Blog
             </button>
           </div>
@@ -889,7 +954,7 @@ with deep adversarial neural decoding"<br>• Used PyTorch framework for trainin
   background-clip: content-box;
   /*transition: .5s;*/
   color: white;font-size: 125%;"><span class="fa fa-github"></span></a>
-        <a href="https://medium.com/@milonimittal" class="link medium" target="_blank" style="display: inline-block;
+        <a href="https://milonimittal.medium.com/" class="link medium" target="_blank" style="display: inline-block;
   vertical-align: middle;
   position: relative;
   width: 37.5px;
