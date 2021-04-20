@@ -3,7 +3,9 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/miloLogo.png"/>
     <title>Miloni Mittal | Home</title>
 
@@ -11,7 +13,6 @@
       body 
       {
         margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
       }
 	  
 	  html, body 
@@ -312,13 +313,17 @@
       }
       .cardBlog 
       {
-        padding: 4%;
+        padding: 2%;
         text-align: center;
         margin-right:10%;
         margin-left:10%;
         border-radius:15px;
       }
 
+      .cardBlog img
+      {
+        width:100%;
+      }
       @media screen and (max-width: 900px) 
       {
         .topnav img
@@ -386,15 +391,15 @@
         .card1 
         {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          margin-left: 10%;
-          margin-right: 10%;
+          margin-left: 20%;
+          margin-right: 20%;
         }
 
         .card2 
         {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          margin-left: 10%;
-          margin-right: 10%;
+          margin-left: 20%;
+          margin-right: 20%;
         }
 
         .columnAwardsText 
@@ -415,6 +420,11 @@
           display: block;
           margin-bottom: 20px;
         }
+
+        .cardBlog img
+        {
+          width:75%;
+        }
       }
     </style>
   </head>
@@ -423,10 +433,10 @@
   <body>
 
     <div class="topnav" id="myTopnav">
-      <a href="index.html" style="font-family: 'Poppins', sans-serif; margin-right:2%; color:black; border-bottom: 2px solid #00416d;">Home</a>
-      <a href="contact.html" style="font-family: 'Poppins', sans-serif;">Contact</a>
-      <a href="https://drive.google.com/file/d/1NteomaqhyjELkqmDBTNryQSp1XH3ewMP/view?usp=sharing" style="font-family: 'Poppins', sans-serif;" target="_blank">Resume</a>
-      <a href="about.html" style="font-family: 'Poppins', sans-serif;">About</a>
+      <a href="index.html" style="font-family: 'Open Sans', sans-serif; margin-right:2%; color:black; border-bottom: 2px solid #00416d;">Home</a>
+      <a href="contact.html" style="font-family: 'Open Sans', sans-serif;">Contact</a>
+      <a href="https://drive.google.com/file/d/1NteomaqhyjELkqmDBTNryQSp1XH3ewMP/view?usp=sharing" style="font-family: 'Open Sans', sans-serif;" target="_blank">Resume</a>
+      <a href="about.html" style="font-family: 'Open Sans', sans-serif;">About</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
@@ -442,7 +452,7 @@
       <div class="columnIntroText" style=" text-align:center;padding-top:3%; ">
           <a style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:400%;"><span style="background: linear-gradient(to top, #dbf6e9 50%, transparent 50%);">Miloni Mittal</span></a>
           <br><br>
-          <p style="font-family: 'Poppins', sans-serif; font-size:112.5%; ">A final year undergraduate at BITS Pilani, who is passionate about solving problems using the power of data.<br><br></p>
+          <p style="font-family: 'Open Sans', sans-serif; font-size:112.5%; ">A final year undergraduate at BITS Pilani, who is passionate about solving problems using the power of data.<br><br></p>
           <div class="social">
               
               <a href="https://www.linkedin.com/in/miloni-mittal/" class="link linkedin" target="_blank"><span class="fa fa-linkedin"></span></a>
@@ -461,15 +471,15 @@
         Experience</span>
     </p>
 
-    <div class="rowAwards" style="font-family: 'Poppins', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
+    <div class="rowAwards" style="font-family: 'Open Sans', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
       <div class="columnAwardsImg" style="text-align:center;">
             <img src="images/bnymLogo.jpg" alt="bnym logo" style="width:50%;">
       </div>
       <div class="columnAwardsText">
-            <p style="font-family: 'Poppins', sans-serif; margin-top:2%; "><b style="font-family: 'Poppins', sans-serif; font-size:125%;"><a href="https://www.bnymellon.com/apac/en.html" target="_blank" style="text-decoration: none;color:#00416d;">
+            <p style="font-family: 'Open Sans', sans-serif; margin-top:2%; "><b style="font-family: 'Open Sans', sans-serif; font-size:125%;"><a href="https://www.bnymellon.com/apac/en.html" target="_blank" style="text-decoration: none;color:#00416d;">
                 Bank of New York Mellon, Pune</a></b> <br><b>Data Insights Intern | Aug - Dec 2020</b>
             </p>
-            <p style="font-family: 'Poppins', sans-serif;">
+            <p style="font-family: 'Open Sans', sans-serif;">
               I worked with the Data Insights team to provide <b>quantitative and qualitative insights</b> into the <b>operations data</b> which can help in increasing efficiency and identify any repetitive core issues that might be hindering the processes. 
             </p>
       </div>
@@ -482,15 +492,15 @@
     padding: 0;
     margin-left:7.5%;
     margin-right:7.5%;">
-    <div class="rowAwards" style="font-family: 'Poppins', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
+    <div class="rowAwards" style="font-family: 'Open Sans', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
       <div class="columnAwardsImg" style="text-align:center;">
         <img src="images/walmartLogo.jpg" alt="walmart global logo" style="width:50%;">
       </div>
       <div class="columnAwardsText">
-        <p style="font-family: 'Poppins', sans-serif; margin-top:2%; "><b style="font-family: 'Poppins', sans-serif; font-size:125%;"><a href="https://www.linkedin.com/company/walmartglobaltechindia/" target="_blank" style="text-decoration: none;color:#00416d;">
+        <p style="font-family: 'Open Sans', sans-serif; margin-top:2%; "><b style="font-family: 'Open Sans', sans-serif; font-size:125%;"><a href="https://www.linkedin.com/company/walmartglobaltechindia/" target="_blank" style="text-decoration: none;color:#00416d;">
                 Walmart Global Tech, Bangalore</a></b> <br><b>Summer Intern | May - July 2020</b>
         </p>
-        <p style="font-family: 'Poppins', sans-serif;">
+        <p style="font-family: 'Open Sans', sans-serif;">
               As a part of the Personalization Team, I contributed in <b>migrating on-premise data</b> to Google Cloud Platform. I was involved in setting the <b>ETL workflow</b> using Scala and Spark and converting Shell scripts of private cluster to run accordingly on GCP. 
 
         </p>
@@ -504,15 +514,15 @@
     padding: 0;
     margin-left:7.5%;
     margin-right:7.5%;">
-    <div class="rowAwards" style="font-family: 'Poppins', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
+    <div class="rowAwards" style="font-family: 'Open Sans', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
       <div class="columnAwardsImg" style="text-align:center;">
         <img src="images/iimaLogo.png" alt="iima logo" style="width:50%;">
       </div>
       <div class="columnAwardsText">
-        <p style="font-family: 'Poppins', sans-serif; margin-top:2%; "><b style="font-family: 'Poppins', sans-serif; font-size:125%;"><a href="https://www.iima.ac.in/" target="_blank" style="text-decoration: none;color:#00416d;">
+        <p style="font-family: 'Open Sans', sans-serif; margin-top:2%; "><b style="font-family: 'Open Sans', sans-serif; font-size:125%;"><a href="https://www.iima.ac.in/" target="_blank" style="text-decoration: none;color:#00416d;">
                 Indian Institute of Management, Ahmedabad </a></b> <br><b>Winter Intern | Dec 2019 - Jan 2020</b>
         </p>
-        <p style="font-family: 'Poppins', sans-serif;">
+        <p style="font-family: 'Open Sans', sans-serif;">
           The aim of the project was to make use of <b>textual data</b> to obtain useful insights without human intervention. I worked on building a pipeline that gives the user an insight into the YouTube comments section of any YouTuber that the he/she wants to know about. Apart from that I also worked on sentiment analysis of restaurant reviews and readability scores of text. 
         </p>
       </div>
@@ -525,15 +535,15 @@
     padding: 0;
     margin-left:7.5%;
     margin-right:7.5%;">
-    <div class="rowAwards" style="font-family: 'Poppins', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
+    <div class="rowAwards" style="font-family: 'Open Sans', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
       <div class="columnAwardsImg" style="text-align:center;">
         <img src="images/ceeriLogo.png" alt="ceeri logo" style="width:50%;">
       </div>
       <div class="columnAwardsText">
-        <p style="font-family: 'Poppins', sans-serif; margin-top:2%; "><b style="font-family: 'Poppins', sans-serif; font-size:125%;"><a href="https://www.csircmc.res.in/ceeri" target="_blank" style="text-decoration: none;color:#00416d;">
+        <p style="font-family: 'Open Sans', sans-serif; margin-top:2%; "><b style="font-family: 'Open Sans', sans-serif; font-size:125%;"><a href="https://www.csircmc.res.in/ceeri" target="_blank" style="text-decoration: none;color:#00416d;">
                 Central Electronics Engineering Research Institute, Chennai</a></b> <br><b>Summer Research Intern | May - July 2019</b>
         </p>
-        <p style="font-family: 'Poppins', sans-serif;">
+        <p style="font-family: 'Open Sans', sans-serif;">
               The aim of the project was to detect abnormal heart conditions like arrhythmia using the data received from <b>wearable technology</b> like smartwatches. In a group of 4, we worked on the backend aspect of the project.
         </p>
       </div>
@@ -543,7 +553,7 @@
 
     <div class="viewResume" style="text-align:center; padding-top:3%;padding-bottom:3%;">
       <button class="button_resume">
-        <a href="https://drive.google.com/file/d/1NteomaqhyjELkqmDBTNryQSp1XH3ewMP/view?usp=sharing" style="font-family: 'Poppins', sans-serif; text-decoration: none; color:white;" target="_blank">
+        <a href="https://drive.google.com/file/d/1NteomaqhyjELkqmDBTNryQSp1XH3ewMP/view?usp=sharing" style="font-family: 'Open Sans', sans-serif; text-decoration: none; color:white;" target="_blank">
             View Resume
         </a>
       </button>
@@ -564,19 +574,19 @@
           
           <div class="containerCard" >
             <img src="images/unitProject.png" alt="expected results and results obtained" style="width:100%; border-radius:15px;">
-            <b style="font-family: 'Poppins', sans-serif; font-size:115%;">
+            <b style="font-family: 'Open Sans', sans-serif; font-size:115%;">
                 Helping Students Build Community - A Case Study
             </b>
             <p>
-                  <button class="button" style="font-family: 'Poppins', sans-serif;">
+                  <button class="button" style="font-family: 'Open Sans', sans-serif;">
                       <a href="https://milonimittal.medium.com/helping-students-build-community-a-prototype-case-study-81aca65db760" style="text-decoration: none;color:white;" target="_blank">Case Study</a>
                   </button> 
-                  <button class="button" style="font-family: 'Poppins', sans-serif;">
+                  <button class="button" style="font-family: 'Open Sans', sans-serif;">
                       <a href="https://drive.google.com/file/d/1ok5oW3VfC6EvLV9pMTiE_yObBYxGxysE/view?usp=sharing" style="text-decoration: none;color:white;" target="_blank">Pitch Deck</a>
                   </button> 
               </p>
             
-            <p style="font-family: 'Poppins', sans-serif;">
+            <p style="font-family: 'Open Sans', sans-serif;">
               A case study for a product that connects students with their college clubs. Conducted user interviews, brainstormed a solution and built the UI prototype.
             </p>
           </div>
@@ -587,15 +597,15 @@
           
             <div class="containerCard">
               <img src="images/ecoeventProject.png" alt="flowchart of the implementation" style="width:100%; border-radius:15px;">
-              <b style="font-family: 'Poppins', sans-serif; font-size:115%;">
+              <b style="font-family: 'Open Sans', sans-serif; font-size:115%;">
                   EcoEvent: Making events eco-friendly and manageable
               </b>
               <p>
-                  <button class="button" style="font-family: 'Poppins', sans-serif;">
+                  <button class="button" style="font-family: 'Open Sans', sans-serif;">
                       <a href="https://drive.google.com/file/d/18g_Rui0mJ3UHv_rXrlzUrUxL4NHdArzp/view?usp=sharing" style="text-decoration: none;color:white;" target="_blank">Pitch Deck</a>
                   </button> 
               </p>
-              <p style="font-family: 'Poppins', sans-serif;">
+              <p style="font-family: 'Open Sans', sans-serif;">
                 A case study for a product that nudges people towards eco-friendly options while organizing events. The proposed product is a one-stop-shop for event requirements.
               </p>
             </div>
@@ -608,19 +618,19 @@
           
           <div class="containerCard" >
             <img src="images/fgProject.png" alt="expected results and results obtained" style="width:100%; border-radius:15px;">
-            <b style="font-family: 'Poppins', sans-serif; font-size:115%;">
+            <b style="font-family: 'Open Sans', sans-serif; font-size:115%;">
                 Foreground Segmentation in Videos with Dynamic Background
             </b>
             <p>
-                  <button class="button" style="font-family: 'Poppins', sans-serif;">
+                  <button class="button" style="font-family: 'Open Sans', sans-serif;">
                       <a href="https://ieeexplore.ieee.org/document/9342267" style="text-decoration: none;color:white;" target="_blank">Publication</a>
                   </button> 
-                  <button class="button" style="font-family: 'Poppins', sans-serif;">
+                  <button class="button" style="font-family: 'Open Sans', sans-serif;">
                       <a href="https://github.com/milonimittal/Foreground-Segmentation-for-Video-Sequences-with-Dynamic-Background" style="text-decoration: none;color:white;" target="_blank">Code</a>
                   </button> 
               </p>
             
-            <p style="font-family: 'Poppins', sans-serif;">
+            <p style="font-family: 'Open Sans', sans-serif;">
                 An approach using exponential smoothing and tuning parameters to segment foreground in videos with dynamic background in real time.
             </p>
           </div>
@@ -631,15 +641,15 @@
           
             <div class="containerCard">
               <img src="images/gansProject.png" alt="flowchart of the implementation" style="width:100%; border-radius:15px;">
-              <b style="font-family: 'Poppins', sans-serif; font-size:115%;">
+              <b style="font-family: 'Open Sans', sans-serif; font-size:115%;">
                   Reconstructing Perceived Faces from Brain Activations
               </b>
               <p>
-                  <button class="button" style="font-family: 'Poppins', sans-serif;">
+                  <button class="button" style="font-family: 'Open Sans', sans-serif;">
                       <a href="https://github.com/milonimittal/Reconstructing-Perceived-Faces-from-Brain-Activations-Data" style="text-decoration: none;color:white;" target="_blank">Code</a>
                   </button> 
               </p>
-              <p style="font-family: 'Poppins', sans-serif;">
+              <p style="font-family: 'Open Sans', sans-serif;">
                 Implementation of the research paper titled "Reconstructing perceived faces from brain activations with deep adversarial neural decoding" using PyTorch framework.
               </p>
             </div>
@@ -653,18 +663,18 @@
           
           <div class="containerCard">
             <img src="images/justjusticeProject.png" alt="just-justice" style="width:100%; border-radius:15px;">
-            <b style="font-family: 'Poppins', sans-serif; font-size:115%;">
+            <b style="font-family: 'Open Sans', sans-serif; font-size:115%;">
                 Just-Justice
             </b>
             <p>
-                <button class="button" style="font-family: 'Poppins', sans-serif;">
+                <button class="button" style="font-family: 'Open Sans', sans-serif;">
                     <a href="https://github.com/milonimittal/Legal-Search-Engine" style="text-decoration: none;color:white;" target="_blank">Code</a>
                 </button> 
-                <button class="button" style="font-family: 'Poppins', sans-serif;""">
+                <button class="button" style="font-family: 'Open Sans', sans-serif;">
                     <a href="https://milonimittal.medium.com/a-search-engine-for-legal-documents-ce689567fc34" style="text-decoration: none;color:white;" target="_blank">Blog</a>
                 </button>
             </p>
-            <p style="font-family: 'Poppins', sans-serif;">
+            <p style="font-family: 'Open Sans', sans-serif;">
              A search engine for legal documents which retrieves relevant documents from a dataset of ~2000 documents. I built the User Interface and the backend for the product.
             </p>
           </div>
@@ -676,15 +686,15 @@
           
           <div class="containerCard">
             <img src="images/biomedirProject.png" alt="screenshot of the survey" style="width:100%; border-radius:15px;">
-            <b style="font-family: 'Poppins', sans-serif; font-size:115%;">
+            <b style="font-family: 'Open Sans', sans-serif; font-size:115%;">
                 Survey - Delta Models for Biomedical IR
             </b>
             <p>
-                <button class="button" style="font-family: 'Poppins', sans-serif;">
+                <button class="button" style="font-family: 'Open Sans', sans-serif;">
                     <a href="https://github.com/milonimittal/Overview-DeltaModels-Biomedical-IR" style="text-decoration: none;color:white;" target="_blank">Paper</a>
                 </button>
             </p>
-            <p style="font-family: 'Poppins', sans-serif;">
+            <p style="font-family: 'Open Sans', sans-serif;">
                 Surveyed the state-of-art Delta models which use deep learning to build an Information Retrieval system for biomedical document retrieval.<br>
             </p>
           </div>
@@ -697,15 +707,15 @@
           
           <div class="containerCard">
             <img src="images/irProject.gif" alt="boy searching for a paper" style="width:100%; border-radius:15px;">
-            <b style="font-family: 'Poppins', sans-serif; font-size:115%;">
+            <b style="font-family: 'Open Sans', sans-serif; font-size:115%;">
                 IR System Using SMART Notation
             </b>
             <p>
-                <button class="button" style="font-family: 'Poppins', sans-serif;">
+                <button class="button" style="font-family: 'Open Sans', sans-serif;">
                     <a href="https://github.com/milonimittal/Information-Retrieval-System" style="text-decoration: none;color:white;" target="_blank">Code</a>
                 </button>
             </p>
-            <p style="font-family: 'Poppins', sans-serif;">
+            <p style="font-family: 'Open Sans', sans-serif;">
                 Built an IR system for free text queries using SMART (lnc.ltc) notation on a vector space-based model. Dataset used: 1M+ documents retrieved from Wikipedia.
             </p>
           </div>
@@ -716,18 +726,18 @@
           
             <div class="containerCard">
               <img src="images/youtubeProject.jpg" alt="computer with youtube open" style="width:100%; border-radius:15px;">
-              <b style="font-family: 'Poppins', sans-serif; font-size:115%;">
+              <b style="font-family: 'Open Sans', sans-serif; font-size:115%;">
                   What's That YouTube Channel About?
               </b>
               <p>
-                  <button class="button" style="font-family: 'Poppins', sans-serif;">
+                  <button class="button" style="font-family: 'Open Sans', sans-serif;">
                       <a href="https://github.com/milonimittal/YouTube-Comments-Analysis" style="text-decoration: none;color:white;" target="_blank">Code</a>
                   </button> 
-                  <button class="button" style="font-family: 'Poppins', sans-serif;">
+                  <button class="button" style="font-family: 'Open Sans', sans-serif;">
                       <a href="https://milonimittal.medium.com/whats-that-youtube-channel-about-973f04c72b4d" style="text-decoration: none;color:white;" target="_blank">Blog</a>
                   </button>
               </p>
-              <p style="font-family: 'Poppins', sans-serif;">
+              <p style="font-family: 'Open Sans', sans-serif;">
                 Used chi-square testing to obtain topics of discussion in comments section of YouTube videos. Obtained sentiment analysis of the comments to know the opinion of viewers.
               </p>
             </div>
@@ -744,9 +754,9 @@
         Publications</span>
     </p>
 
-        <p style="font-family: 'Poppins', sans-serif; margin-left:7.5%;margin-right:7.5%; border-radius:15px; background-color: #fafafa; padding:2.5%;">
-            <b style="font-family: 'Poppins', sans-serif; font-size:125%;">
-            Real Time Foreground Segmentation in Videos with Dynamic Background<br></b><a href="https://www.indicon2020.in/" target="_blank" style="text-decoration: none;color:#00416d"><b>INDICON 2020 (IEEE India Council International Conference)</b></a> <button class="button" style="font-family: 'Poppins', sans-serif;">
+        <p style="font-family: 'Open Sans', sans-serif; margin-left:7.5%;margin-right:7.5%; border-radius:15px; background-color: #fafafa; padding:2.5%;">
+            <b style="font-family: 'Open Sans', sans-serif; font-size:125%;">
+            Real Time Foreground Segmentation in Videos with Dynamic Background<br></b><a href="https://www.indicon2020.in/" target="_blank" style="text-decoration: none;color:#00416d"><b>INDICON 2020 (IEEE India Council International Conference)</b></a> <button class="button" style="font-family: 'Open Sans', sans-serif;">
                       <a href="https://ieeexplore.ieee.org/document/9342267" style="text-decoration: none;color:white;" target="_blank">Publication</a>
                   </button> 
             <br>
@@ -761,22 +771,22 @@
         Awards</span>
     </p>
 
-    <div class="rowAwards" style="font-family: 'Poppins', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
+    <div class="rowAwards" style="font-family: 'Open Sans', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
       <div class="columnAwardsImg" style="text-align:center;">
         <img src="images/pbLogo.png" alt="product buds logo" style="width:50%;">
       </div>
       <div class="columnAwardsText">
-        <p style="font-family: 'Poppins', sans-serif;">
-          <b style="font-family: 'Poppins', sans-serif; font-size:125%;">
+        <p style="font-family: 'Open Sans', sans-serif;">
+          <b style="font-family: 'Open Sans', sans-serif; font-size:125%;">
               Project Jam Protothon Fall 2020 - Among Top 5 Teams</b><br><b><a href="https://productbuds.co/" target="_blank" style="text-decoration: none; color: #00416d">Product Buds</a> | November 2020</b>
         </p>
         <p>
           • Was in the top 5 teams out of 21 participating teams for a case study of a product to deal with "The New
 Normal." Our product focused on providing a platform for university students to engage in social activities during the lockdown.<br>• Had the opportunity to pitch our idea to 4 International Tech Product Managers.
     </p>
-    <button class="button" style="font-family: 'Poppins', sans-serif;">
+    <button class="button" style="font-family: 'Open Sans', sans-serif;">
                       <a href="https://youtu.be/sLAM1pPDupk?t=3083" style="text-decoration: none;color:white;" target="_blank">Pitch</a>
-                  </button> <button class="button" style="font-family: 'Poppins', sans-serif;">
+                  </button> <button class="button" style="font-family: 'Open Sans', sans-serif;">
                       <a href="https://milonimittal.medium.com/helping-students-build-community-a-prototype-case-study-81aca65db760" style="text-decoration: none;color:white;" target="_blank">Case Study</a>
                   </button> 
       </div>
@@ -789,21 +799,21 @@ Normal." Our product focused on providing a platform for university students to 
     padding: 0;
     margin-left:7.5%;
     margin-right:7.5%;">
-    <div class="rowAwards" style="font-family: 'Poppins', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
+    <div class="rowAwards" style="font-family: 'Open Sans', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
       <div class="columnAwardsImg" style="text-align:center;">
         <img src="images/netappLogo.png" alt="netapp logo" style="width:50%;">
       </div>
       <div class="columnAwardsText">
-        <p style="font-family: 'Poppins', sans-serif;">
-          <b style="font-family: 'Poppins', sans-serif; font-size:125%;">
+        <p style="font-family: 'Open Sans', sans-serif;">
+          <b style="font-family: 'Open Sans', sans-serif; font-size:125%;">
               NetApp Women INnovathon - Second Runner Up</b><br><b><a href="https://www.netapp.com/" target="_blank" style="text-decoration: none; color: #00416d">NetApp, Inc.</a> | October 2020</b>
         </p>
         <p>
           • Won prize money for building a legal search engine "Just-Justice."<br>• Selected for a 3 month mentorship program by NetApp professionals.
 		</p>
-    <button class="button" style="font-family: 'Poppins', sans-serif;">
+    <button class="button" style="font-family: 'Open Sans', sans-serif;">
                       <a href="https://github.com/milonimittal/Legal-Search-Engine" style="text-decoration: none;color:white;" target="_blank">Code</a>
-                  </button> <button class="button" style="font-family: 'Poppins', sans-serif;">
+                  </button> <button class="button" style="font-family: 'Open Sans', sans-serif;">
                       <a href="https://milonimittal.medium.com/a-search-engine-for-legal-documents-ce689567fc34" style="text-decoration: none;color:white;" target="_blank">Blog</a>
                   </button> 
       </div>
@@ -816,13 +826,13 @@ Normal." Our product focused on providing a platform for university students to 
     padding: 0;
     margin-left:7.5%;
     margin-right:7.5%;">
-    <div class="rowAwards" style="font-family: 'Poppins', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
+    <div class="rowAwards" style="font-family: 'Open Sans', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
       <div class="columnAwardsImg">
         <img src="images/ghciLogo.png" alt="ghci logo" style="width:100%">
       </div>
       <div class="columnAwardsText">
-		<p style="font-family: 'Poppins', sans-serif;">
-          <b style="font-family: 'Poppins', sans-serif; font-size:125%;">
+		<p style="font-family: 'Open Sans', sans-serif;">
+          <b style="font-family: 'Open Sans', sans-serif; font-size:125%;">
               Grace Hopper Celebration India - Student Scholar</b><br><b><a href="https://www.netapp.com/" target="_blank" style="text-decoration: none; color: #00416d">Anita B.org</a> | July 2020</b>
 		</p>
 		<p>
@@ -839,88 +849,98 @@ Normal." Our product focused on providing a platform for university students to 
         Blogs</span>
     </p>
 
-    <p style="text-align: center;font-family: 'Poppins', sans-serif; font-size:125%;margin-left:6%;margin-right:6%;">
-    I love to write about my experiences and projects on my <a href="https://milonimittal.medium.com/" style="font-family: 'Poppins', sans-serif;text-decoration: none;color:#00416d;" target="_blank"><b>Medium</b></a> blog.<br><br>  
+    <p style="text-align: center;font-family: 'Open Sans', sans-serif; font-size:125%;margin-left:6%;margin-right:6%;">
+    I love to write about my experiences and projects on my <a href="https://milonimittal.medium.com/" style="font-family: 'Open Sans', sans-serif; text-decoration: none;color:#00416d;" target="_blank"><b>Medium</b></a> blog.<br><br>  
     </p>
     <div class="rowBlog">
       <div class="columnBlog">
-        <a href="https://milonimittal.medium.com/a-search-engine-for-legal-documents-ce689567fc34" style="text-decoration:none;" target="_blank">
-          <div class="cardBlog" style="background-image: url('images/legalIRBlog.png'); background-repeat: no-repeat; background-size: cover; ">
-            <h3 style="color:white;font-family: 'Poppins', sans-serif;">A Search Engine for Legal Documents</h3><h4 style="color:white;font-family: 'Poppins', sans-serif;">Published on: Dec 7, 2020</h4><br>
-            <button class="button" style="font-family: 'Poppins', sans-serif; width:125px;">
+        
+          <div class="cardBlog">
+            <a href="https://milonimittal.medium.com/a-search-engine-for-legal-documents-ce689567fc34" style="text-decoration:none;" target="_blank">
+              <img src="images/legalIRBlog.jpg" alt="ghci logo" style="border-radius:15px;"><br>
+            <b style="color:#00416d; font-family: 'Open Sans', sans-serif;">A Search Engine for Legal Documents</b>
+            <!-- <button class="button" style="font-family: 'Open Sans', sans-serif; width:125px;">
                             Read the Blog
-            </button>
+            </button> -->
+            </a>
           </div>
-        </a>
+        
       </div>
 
-    	<div class="columnBlog">
-        <a href="https://milonimittal.medium.com/helping-students-build-community-a-prototype-case-study-81aca65db760" style="text-decoration:none;" target="_blank">
-          <div class="cardBlog" style="background-image: url('images/pjBlog.png'); background-repeat: no-repeat; background-size: cover; ">
-            <h3 style="color:white;font-family: 'Poppins', sans-serif;">Helping Students Build Community- A Case Study</h3><h4 style="color:white;font-family: 'Poppins', sans-serif;">Published on: Nov 26, 2020</h4><br>
-            <button class="button" style="font-family: 'Poppins', sans-serif; width:125px;">
-                            Read the Blog
-            </button>
-          </div>
-        </a>
-      </div>
-	  
       <div class="columnBlog">
-        <a href="https://milonimittal.medium.com/discovering-the-secret-to-perfect-time-management-a1a24c5bd1b7" style="text-decoration:none;" target="_blank">
-          <div class="cardBlog" style="background-image: url('images/timeBlog.png'); background-repeat: no-repeat; background-size: cover; ">
-            <h3 style="color:white;font-family: 'Poppins', sans-serif;">Discovering the Secret to Managing Time Perfectly</h3><h4 style="color:white;font-family: 'Poppins', sans-serif;">Published on: Oct 19, 2020</h4><br>
-            <button class="button" style="font-family: 'Poppins', sans-serif; width:125px;">
+        
+          <div class="cardBlog">
+            <a href="https://milonimittal.medium.com/helping-students-build-community-a-prototype-case-study-81aca65db760" style="text-decoration:none;" target="_blank">
+              <img src="images/pjBlog.jpg" alt="ghci logo" style="border-radius:15px;"><br>
+            <b style="color:#00416d; font-family: 'Open Sans', sans-serif;">Helping Students Build Community- A Case Study</b>
+            <!-- <button class="button" style="font-family: 'Open Sans', sans-serif; width:125px;">
                             Read the Blog
-            </button>
+            </button> -->
+            </a>
           </div>
-        </a>
+        
       </div>
 
-      
 
+      <div class="columnBlog">
+        
+          <div class="cardBlog">
+            <a href="https://milonimittal.medium.com/discovering-the-secret-to-perfect-time-management-a1a24c5bd1b7" style="text-decoration:none;" target="_blank">
+              <img src="images/timeBlog.jfif" alt="ghci logo" style="border-radius:15px;"><br>
+            <b style="color:#00416d; font-family: 'Open Sans', sans-serif;">Discovering the Secret to Managing Time Perfectly</b>
+            <!-- <button class="button" style="font-family: 'Open Sans', sans-serif; width:125px;">
+                            Read the Blog
+            </button> -->
+            </a>
+          </div>
+        
+      </div>   
         
     </div>
     <div class="rowBlog">
+
+
+
       <div class="columnBlog">
-        <a href="https://milonimittal.medium.com/neural-networks-and-humans-a-comparison-c656a1280816" style="text-decoration:none;" target="_blank">
-          <div class="cardBlog" style="background-image: url('images/neuralBlog.png'); background-repeat: no-repeat; background-size: cover;">
-            <h3 style="color:white;font-family: 'Poppins', sans-serif;">Neural Networks and Humans- Exploring Similarities</h3><h4 style="color:white;font-family: 'Poppins', sans-serif;">Published on: Oct 12, 2020</h4><br>
-            <button class="button" style="font-family: 'Poppins', sans-serif; width:125px;">
-              Read the Blog
-            </button>
+        
+          <div class="cardBlog">
+            <a href="https://milonimittal.medium.com/neural-networks-and-humans-a-comparison-c656a1280816" style="text-decoration:none;" target="_blank">
+              <img src="images/neuralBlog.jpg" alt="ghci logo" style="border-radius:15px;"><br>
+            <b style="color:#00416d; font-family: 'Open Sans', sans-serif;">Neural Networks and Humans- Exploring Similarities</b>
+            </a>
           </div>
-        </a>
+        
       </div>
 
-	  <div class="columnBlog">
-        <a href="https://milonimittal.medium.com/the-ghci-student-scholarship-a-step-by-step-guide-f172ab74008f?sk=0e23b08ec444c115d95b650bf534497a" style="text-decoration:none;" target="_blank">
-          <div class="cardBlog" style="background-image: url('images/ghciBlog.png'); background-repeat: no-repeat; background-size: cover;">
-            <h3 style="color:white;font-family: 'Poppins', sans-serif;">The GHCI Student Scholarship: A Step by Step Guide</h3><h4 style="color:white;font-family: 'Poppins', sans-serif;">Published on: July 27, 2020</h4><br>
-            <button class="button" style="font-family: 'Poppins', sans-serif; width:125px;">
-              Read the Blog     
-            </button>
-          </div>
-        </a>
-      </div>
-	  
       <div class="columnBlog">
-        <a href="https://milonimittal.medium.com/whats-that-youtube-channel-about-973f04c72b4d?sk=a164abffe7622698c44df8fa7a674461" style="text-decoration:none;" target="_blank">
-          <div class="cardBlog" style="background-image: url('images/youtubeBlog.png'); background-repeat: no-repeat; background-size: cover;">
-            <h3 style="color:white;font-family: 'Poppins', sans-serif;">What’s That YouTube Channel About? Find Out Using NLP</h3><h4 style="color:white;font-family: 'Poppins', sans-serif;">Published on: July 23, 2020</h4><br>
-            <button class="button" style="font-family: 'Poppins', sans-serif; width:125px;">
-              Read the Blog
-            </button>
+        
+          <div class="cardBlog">
+            <a href="https://milonimittal.medium.com/the-ghci-student-scholarship-a-step-by-step-guide-f172ab74008f?sk=0e23b08ec444c115d95b650bf534497a" style="text-decoration:none;" target="_blank">
+              <img src="images/ghciBlog.jpeg" alt="ghci logo" style="border-radius:15px;"><br>
+            <b style="color:#00416d; font-family: 'Open Sans', sans-serif;">The GHCI Student Scholarship: A Step by Step Guide</b>
+            </a>
           </div>
-        </a>
+        
+      </div>
+
+      <div class="columnBlog">
+        
+          <div class="cardBlog">
+            <a href="https://milonimittal.medium.com/whats-that-youtube-channel-about-973f04c72b4d?sk=a164abffe7622698c44df8fa7a674461" style="text-decoration:none;" target="_blank">
+              <img src="images/youtubeBlog.jfif" alt="ghci logo" style="border-radius:15px;"><br>
+            <b style="color:#00416d; font-family: 'Open Sans', sans-serif;">What’s That YouTube Channel About? Find Out Using NLP</b>
+            </a>
+          </div>
+        
       </div>
     </div>
 
     <br><br><br>
     <div class="footer">
-      <p style="font-family: 'Poppins', sans-serif;">
+      <p style="font-family: 'Open Sans', sans-serif;">
         Thank you for stopping by
       </p>
-      <p style="font-family: 'Poppins', sans-serif;">
+      <p style="font-family: 'Open Sans', sans-serif;">
         Let's connect!
         <div class="social">
         
@@ -959,7 +979,7 @@ Normal." Our product focused on providing a platform for university students to 
         
         </div>
       </p>
-      <p style="font-family: 'Poppins', sans-serif;"> &#169; Designed and created by Miloni Mittal</p>
+      <p style="font-family: 'Open Sans', sans-serif;"> &#169; Designed and created by Miloni Mittal</p>
       <br>
     </div>
 
